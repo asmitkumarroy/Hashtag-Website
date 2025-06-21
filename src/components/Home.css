@@ -1,0 +1,48 @@
+.hero-content{
+    
+    height:70vh;
+    width:80%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    
+    position: relative;
+}
+
+
+h1 {
+  font-size: 90px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: transparent;
+
+}
+
+p{
+    background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: transparent;
+  margin-left: 15%;
+  width: 70%;
+  font-size: 30px;
+}
+
+.JIMS-Relations-Header{
+    font-size: 50px;
+    margin-left: 15%;
+
+
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    font-family: "MyFont";
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/OskariG2Regular.otf")format("opentype");
+       
+  font-weight: normal;
+  font-style: normal;
+}

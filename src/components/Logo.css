@@ -1,0 +1,21 @@
+.logo{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+   padding: 20px;
+   box-sizing: border-box;
+  
+  
+}
+
+.Hashtag-logo{
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.Jims-logo{
+    height: 60px;
+    width: 90px;
+}
