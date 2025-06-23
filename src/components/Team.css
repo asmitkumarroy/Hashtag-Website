@@ -1,3 +1,57 @@
-body{
-    color: white;
+.new-page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
+.new-team-page { text-align: center; }
+.new-page-main-title { font-size: 3rem; font-weight: 900; margin-bottom: 2rem; color: #fff; }
+.new-team-section { margin-bottom: 5rem; }
+.new-team-category-title { font-size: 1.5rem; font-weight: 500; color: #e5e7eb; margin-bottom: 3rem; }
+
+/* Base grid style */
+.new-team-grid {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+}
+
+/* Overall Leaders Layout */
+.leaders-layout-container { display: flex; flex-direction: column; align-items: center; gap: 3rem; }
+.leaders-top-row { grid-template-columns: repeat(3, 1fr); width: 100%; }
+.leaders-bottom-row { grid-template-columns: repeat(2, 1fr); width: 70%; }
+
+/* CHANGE #4: Standardized layouts for all departments */
+.department-leads-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px; /* A bit wider for the larger cards */
+  margin: 0 auto 3rem; /* Center the grid and add space below */
+}
+
+.department-members-grid {
+  grid-template-columns: repeat(4, 1fr); /* Always 4 columns on larger screens */
+}
+
+
+/* Responsive adjustments for the new department grids */
+@media (max-width: 1200px) {
+  .department-members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .leaders-top-row, .leaders-bottom-row, .department-leads-grid, .department-members-grid {
+    grid-template-columns: 1fr; /* Stack all cards on mobile */
+    width: 100%;
+    max-width: 380px; /* Limit width on mobile for better appearance */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Tabs Styles */
+.new-team-tabs { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid rgba(255, 255, 255, 0.2); margin-bottom: 4rem; }
+.new-tab-button { background: none; border: none; border-bottom: 3px solid transparent; transform: translateY(1px); color: #adb5bd; font-size: 1.1rem; font-weight: 600; padding: 1rem 1.5rem; cursor: pointer; transition: all 0.3s ease; }
+.new-tab-button:hover { color: #fff; }
+.new-tab-button.active { color: #fff; border-bottom-color: #fff; }
