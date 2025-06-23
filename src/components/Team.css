@@ -4,9 +4,9 @@
   padding: 3rem 2rem;
 }
 .new-team-page { text-align: center; }
-.new-page-main-title { font-size: 3rem; font-weight: 900; margin-bottom: 2rem; color: #fff; }
+.new-page-main-title { font-size: 5rem; font-weight: 700; margin-bottom: 2rem; color: #fff; }
 .new-team-section { margin-bottom: 5rem; }
-.new-team-category-title { font-size: 1.5rem; font-weight: 500; color: #e5e7eb; margin-bottom: 3rem; }
+.new-team-category-title { font-size: 3.5rem; font-weight: 500; color: #e5e7eb; margin-bottom: 3rem; }
 
 /* Base grid style */
 .new-team-grid {
