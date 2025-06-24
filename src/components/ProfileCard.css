@@ -140,7 +140,7 @@
 
 .pc-card:hover .pc-shine,
 .pc-card.active .pc-shine {
-  filter: brightness(0.85) contrast(1.5) saturate(0.5);
+  filter: brightness(0.5) contrast(1.5) saturate(0.5);
   animation: none;
 }
 
