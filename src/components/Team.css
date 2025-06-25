@@ -8,7 +8,7 @@
 .new-team-section { margin-bottom: 5rem; }
 .new-team-category-title { font-size: 3.5rem; font-weight: 500; color: #e5e7eb; margin-bottom: 3rem; }
 
-/* Base grid style */
+
 .new-team-grid {
   display: grid;
   gap: 3rem;

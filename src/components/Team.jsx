@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import ProfileCard from './ProfileCard';
 import './Team.css';
 
-// The data structure is now updated with the official names and roles you provided.
+// The data structure is now updated with the official names and roles you provided .This includes the leaders and members of each department, along with their social media links and avatar URLs.
+// Ensure that the avatar URLs are correctly set for each member, and placeholders are used where necessary. Change the placeholder URLs to actual images if available.
+// The teamData object is structured to include leaders, technical, graphics, management, content, and social departments with their respective members.
+// The component renders the leadership section first, followed by tabs for each department. When a tab is clicked, it displays the leads and members of that department. 
+// It also hovers over the leaders and members to show their names, titles, and social media links. 
+// Do not change any other data only change this data structure to match the official names and roles you provided.
 const teamData = {
   leaders: [
     { name: 'Asmit Kumar Roy', title: 'President', avatarUrl: '/Photos/Asmit.png', social: { github: 'https://github.com/asmitkumarroy', linkedin: 'https://www.linkedin.com/in/asmit-kumar-roy',instagram: "https://www.instagram.com/_asmit_2304"} },
@@ -61,7 +66,7 @@ const teamData = {
   social: {
     leads: [
     { name: 'Pratyush Patwal', title: 'Head', avatarUrl: '/Photos/Pratyush.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-    // This line was corrected from 'savatarUrl' to 'avatarUrl'
+  
     { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/ayushParashar.jpg', social: { github: '#', linkedin: '#',instagram: "#" } } 
 ],
     members: []
