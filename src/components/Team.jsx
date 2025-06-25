@@ -13,7 +13,7 @@ const teamData = {
   ],
   technical: {
     leads: [
-      { name: 'Alok Kumar Jha', title: 'Head', avatarUrl: '/Photos/Harsh.jpg', social: { github: '#', linkedin: '#' } },
+      { name: 'Alok Kumar Jha', title: 'Head', avatarUrl: '/Photos/Alok.jpg', social: { github: '#', linkedin: '#' } },
       { name: 'Harsh Naagar', title: 'Co-Head', avatarUrl: '/Photos/Harsh.jpg', social: { github: '#', linkedin: '#' } }
     ],
     members: [
@@ -37,8 +37,8 @@ const teamData = {
   },
   management: {
     leads: [
-        { name: 'Anwesha Sen', title: 'Head', avatarUrl: '/Photos/Anwesha.jpg',social: { github: '#', linkedin: '#' } },
-        { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain.jpg',social: { github: '#', linkedin: '#' } }
+        { name: 'Anwesha Sen', title: 'Head', avatarUrl: '/Photos/Anwesha1.jpg',social: { github: '#', linkedin: '#' } },
+        { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain1.jpg',social: { github: '#', linkedin: '#' } }
     ],
     members: [
         { name: 'Atula (1)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#' } },
@@ -62,7 +62,7 @@ const teamData = {
     leads: [
     { name: 'Pratyush Patwal', title: 'Head', avatarUrl: '/Photos/Pratyush.jpg',social: { github: '#', linkedin: '#' } },
     // This line was corrected from 'savatarUrl' to 'avatarUrl'
-    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/Ayush_Parashar.jpg', social: { github: '#', linkedin: '#' } } 
+    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/ayushParashar.jpg', social: { github: '#', linkedin: '#' } } 
 ],
     members: []
   },
