@@ -5,7 +5,7 @@ import './Team.css';
 // The data structure is now updated with the official names and roles you provided.
 const teamData = {
   leaders: [
-    { name: 'Asmit Kumar Roy', title: 'President', avatarUrl: '/Photos/Asmit.png', social: { github: '#', linkedin: '#' } },
+    { name: 'Asmit Kumar Roy', title: 'President', avatarUrl: '/Photos/Asmit.png', social: { github: '#', linkedin: '#',instagram: "https://icons8.com/icons/set/instagram" } },
     { name: 'Neelesh Kumar', title: 'Vice-President', avatarUrl: '/Photos/Neelesh.jpg',social: { github: '#', linkedin: '#' } },
     { name: 'Akshat Tyagi', title: 'Secretary', avatarUrl: '/Photos/Neelesh.jpg', social: { github: '#', linkedin: '#' } },
     { name: 'Kangna Shrivastava', title: 'Treasurer', avatarUrl: '/Photos/Kangna.jpg', social: { github: '#', linkedin: '#' } },

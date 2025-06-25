@@ -233,9 +233,12 @@ const ProfileCardComponent = ({
     [iconUrl, grainUrl, showBehindGradient, behindGradient, innerGradient]
   );
 
-  const handleContactClick = useCallback(() => {
-    onContactClick?.();
-  }, [onContactClick]);
+// New handler function to open links
+  const handleSocialClick = (url) => {
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <div
@@ -261,10 +264,16 @@ const ProfileCardComponent = ({
             {showUserInfo && (
               <div className="pc-user-info">
                 <div className="pc-social-links">
-                <a href={social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
-                <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-                <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-              </div>
+                  <button onClick={() => handleSocialClick(social.github)} className="social-button">
+                    <FaGithub />
+                  </button>
+                  <button onClick={() => handleSocialClick(social.linkedin)} className="social-button">
+                    <FaLinkedin />
+                  </button>
+                  <button onClick={() => handleSocialClick(social.instagram)} className="social-button">
+                    <FaInstagram />
+                  </button>
+                </div>
                 <div className="pc-user-details">
                 </div>
               </div>
