@@ -10,64 +10,64 @@ import './Team.css';
 // Do not change any other data only change this data structure to match the official names and roles you provided.
 const teamData = {
   leaders: [
+    { name: 'Neelesh Kumar', title: 'Vice-President', avatarUrl: '/Photos/Neelesh.png',social: { github: '#', linkedin: '#',instagram: "#" } },
     { name: 'Asmit Kumar Roy', title: 'President', avatarUrl: '/Photos/Asmit.png', social: { github: 'https://github.com/asmitkumarroy', linkedin: 'https://www.linkedin.com/in/asmit-kumar-roy',instagram: "https://www.instagram.com/_asmit_2304"} },
-    { name: 'Neelesh Kumar', title: 'Vice-President', avatarUrl: '/Photos/Neelesh.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-    { name: 'Akshat Tyagi', title: 'Secretary', avatarUrl: '/Photos/Neelesh.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
-    { name: 'Kangna Shrivastava', title: 'Treasurer', avatarUrl: '/Photos/Kangna.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
-    { name: 'Rishabh Verma', title: 'Deputy Head',avatarUrl: '/Photos/Rishabh.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
+    { name: 'Akshat Tyagi', title: 'Secretary', avatarUrl: '/Photos/Akshat_Tyagi.png', social: { github: '#', linkedin: '#',instagram: "#" } },
+    { name: 'Kangna Shrivastava', title: 'Treasurer', avatarUrl: '/Photos/Kangna.png', social: { github: '#', linkedin: '#',instagram: "#" } },
+    { name: 'Rishabh Verma', title: 'Deputy Head',avatarUrl: '/Photos/Rishabh.png', social: { github: '#', linkedin: '#',instagram: "#" } },
   ],
   technical: {
     leads: [
-      { name: 'Alok Kumar Jha', title: 'Head', avatarUrl: '/Photos/Alok.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
-      { name: 'Harsh Naagar', title: 'Co-Head', avatarUrl: '/Photos/Harsh.jpg', social: { github: '#', linkedin: '#',instagram: "#" } }
+      { name: 'Alok Kumar Jha', title: 'Head', avatarUrl: '/Photos/Alok.png', social: { github: '#', linkedin: '#',instagram: "#" } },
+      { name: 'Harsh Naagar', title: 'Co-Head', avatarUrl: '/Photos/Harsh.png', social: { github: '#', linkedin: '#',instagram: "#" } }
     ],
     members: [
-      { name: 'Ayush Kumar Singh', title: 'Member', avatarUrl: '/Photos/Asmit.png', social: { github: '#', linkedin: '#',instagram: "#" } },
-      { name: 'Ankit Choudhary', title: 'Member', avatarUrl: '/Photos/Ankit.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
-      { name: 'Aman Verma', title: 'Member', avatarUrl: '/Photos/Aman.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-      { name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
+      { name: 'Ayush Kumar Singh', title: 'Member', avatarUrl: '/Photos/Ayush_Kumar.png', social: { github: '#', linkedin: '#',instagram: "#" } },
+      { name: 'Ankit Choudhary', title: 'Member', avatarUrl: '/Photos/Ankit.png', social: { github: '#', linkedin: '#',instagram: "#" } },
+      { name: 'Aman Verma', title: 'Member', avatarUrl: '/Photos/Aman.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+      //{ name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.png', social: { github: '#', linkedin: '#',instagram: "#" } },
     ]
   },
   graphics: {
     leads: [
-        { name: 'Md. Abdullah Meraj', title: 'Head', avatarUrl: '/Photos/Abdullah.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Priyal Jain', title: 'Co-Head', avatarUrl: '/Photos/Priyal.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
+        { name: 'Md. Abdullah Meraj', title: 'Head', avatarUrl: '/Photos/Abdullah.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Priyal Jain', title: 'Co-Head', avatarUrl: '/Photos/Priyal.png',social: { github: '#', linkedin: '#',instagram: "#" } }
     ],
     members: [
-        { name: 'Avishka Bhardwaj', title: 'Member', avatarUrl: '/Photos/Avishka.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Samaira Khan', title: 'Member', avatarUrl: '/Photos/Samaira.jpg', social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.jpeg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Anantabh Kashyup', title: 'Member', avatarUrl: '/Photos/Arin.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
+        { name: 'Avishka Bhardwaj', title: 'Member', avatarUrl: '/Photos/Avishka.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.png', social: { github: '#', linkedin: '#',instagram: "#" } },
+        //{ name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Anantabh Kashyup', title: 'Member', avatarUrl: '/Photos/Arin.png',social: { github: '#', linkedin: '#',instagram: "#" } }
     ]
   },
   management: {
     leads: [
-        { name: 'Anwesha Sen', title: 'Head', avatarUrl: '/Photos/Anwesha1.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain1.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
+        { name: 'Anwesha Sen', title: 'Head', avatarUrl: '/Photos/Anwesha.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain.png',social: { github: '#', linkedin: '#',instagram: "#" } }
     ],
     members: [
-        { name: 'Atula (1)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Atula (2)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Atula (3)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Atula (4)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
+        { name: 'Atuyla', title: 'Member', avatarUrl: '/Photos/Atulya.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        //{ name: 'Atula (3)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
+        //{ name: 'Atula (4)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
     ]
   },
   content: {
     leads: [
-        { name: 'Sanskriti Bishnoi', title: 'Head', avatarUrl: '/Photos/Sanskriti.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Rishabh Verma', title: 'Co-Head', avatarUrl: '/Photos/Rishabh.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
+        { name: 'Sanskriti Bishnoi', title: 'Head', avatarUrl: '/Photos/Sanskriti.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Rishabh Verma', title: 'Co-Head', avatarUrl: '/Photos/Rishabh.png',social: { github: '#', linkedin: '#',instagram: "#" } }
     ],
     members: [
-        { name: 'Vanshika Shrivastava', title: 'Member', avatarUrl: '/Photos/Vanshika.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Shreya Sai', title: 'Member', avatarUrl: '/Photos/Shreya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Vanshika', title: 'Member', avatarUrl: '/Photos/Vanshika.png',social: { github: '#', linkedin: '#',instagram: "#" } },
+        { name: 'Shreya Sai', title: 'Member', avatarUrl: '/Photos/Shreya.png',social: { github: '#', linkedin: '#',instagram: "#" } },
         
     ]
   },
   social: {
     leads: [
-    { name: 'Pratyush Patwal', title: 'Head', avatarUrl: '/Photos/Pratyush.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
+    { name: 'Pratyush Patwal', title: 'Head', avatarUrl: '/Photos/Pratyush.png',social: { github: '#', linkedin: '#',instagram: "#" } },
   
-    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/ayushParashar.jpg', social: { github: '#', linkedin: '#',instagram: "#" } } 
+    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/Ayush_Parashar.png', social: { github: '#', linkedin: '#',instagram: "#" } } 
 ],
     members: []
   },
