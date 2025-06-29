@@ -67,7 +67,7 @@ const teamData = {
     leads: [
     { name: 'Pratyush Patwal', title: 'Head', avatarUrl: '/Photos/Pratyush.png',social: { github: 'https://github.com/pratyush1279', linkedin: 'https://www.linkedin.com/in/pratyush-patwal-198144333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/ohhpratyush?igsh=MWl3bDJjNnowdjQ4ZQ==" } },
   
-    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/Ayush_Parashar.png', social: { github: 'https://github.com/ayushparashar91', linkedin: 'https://www.linkedin.com/in/ayush-parashar-49a596213',instagram: "https://www.instagram.com/ayushparashar19/" } } 
+    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/Ayush_Parashar.png', social: { github: 'https://github.com/ayushparashar91', linkedin: 'https://www.linkedin.com/in/ayush-parashar-49a596213',instagram: "https://www.instagram.com/ayushparashar19" } } 
 ],
     members: []
   },
