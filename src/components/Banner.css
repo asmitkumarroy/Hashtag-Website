@@ -1,0 +1,35 @@
+.banner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #000000, #111111);
+  border-top: 2px solid #ffffff20;
+  border-bottom: 2px solid #ffffff20;
+  padding: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.banner-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 16px;
+  animation: scroll-left 30s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-text {
+    font-size: 14px;
+    animation-duration: 20s;
+  }
+}

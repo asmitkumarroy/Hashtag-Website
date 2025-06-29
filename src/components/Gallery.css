@@ -1,0 +1,43 @@
+.photo-gallery {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 250px);
+  grid-template-areas:
+    "a b b"
+    "a c d"
+    "e e d";
+}
+
+.item {
+  background-color: #ccc; /* 🔄 Replace with image or gradient */
+
+  background-size: cover;
+  background-position: center;
+}
+
+Assigning layout areas
+.item1 { grid-area: a; background-image: url("/images/img1.jpg"); }
+.item2 { grid-area: b; background-image: url("/images/img2.jpg"); }
+.item3 { grid-area: c; background-image: url("/images/img3.jpg"); }
+.item4 { grid-area: d; background-image: url("/images/img4.jpg"); }
+.item5 { grid-area: e; background-image: url("/images/img5.jpg"); }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-areas: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .item {
+    height: 200px;
+  }
+}
