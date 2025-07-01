@@ -11,7 +11,8 @@ import Banner from './components/Banner.jsx'
 import Events from './components/Events.jsx'
 import Team from './components/Team.jsx'
 import Blogs from './components/Blogs';
-import SinglePost from './components/SinglePost'; // Import the new component
+import SinglePost from './components/SinglePost'; 
+import Alumni from './components/Alumni';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
               <Route path="/blogs" element={<Blogs />} />
               {/* This is a dynamic route for single posts */}
               <Route path="/blogs/:slug" element={<SinglePost />} />
+        <Route path="/alumni" element={<Alumni />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events/>} />

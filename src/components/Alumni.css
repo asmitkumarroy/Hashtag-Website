@@ -1,0 +1,20 @@
+.alumni-page {
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: #9CA3AF;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alumni-grid {
+  display: grid;
+  /* This creates a responsive grid for the alumni cards */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3.5rem;
+  justify-items: center;
+}
