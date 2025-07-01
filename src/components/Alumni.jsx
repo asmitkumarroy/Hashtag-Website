@@ -10,6 +10,23 @@ const alumniData = [
   { name: 'Sneha Reddy', title: 'UX Designer @ Adobe', avatarUrl: '/Photos/alumni4.png', social: { github: '#', linkedin: '#' } },
   { name: 'Vikram Rao', title: 'Cloud Architect @ Oracle', avatarUrl: '/Photos/alumni5.png', social: { github: '#', linkedin: '#' } },
   { name: 'Isha Gupta', title: 'Frontend Developer @ Netflix', avatarUrl: '/Photos/alumni6.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Rohan Sharma', title: 'Software Engineer @ Google', avatarUrl: '/Photos/alumni1.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Priya Mehta', title: 'Product Manager @ Microsoft', avatarUrl: '/Photos/alumni2.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Arjun Singh', title: 'Data Scientist @ Amazon', avatarUrl: '/Photos/alumni3.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Sneha Reddy', title: 'UX Designer @ Adobe', avatarUrl: '/Photos/alumni4.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Vikram Rao', title: 'Cloud Architect @ Oracle', avatarUrl: '/Photos/alumni5.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Isha Gupta', title: 'Frontend Developer @ Netflix', avatarUrl: '/Photos/alumni6.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Rohan Sharma', title: 'Software Engineer @ Google', avatarUrl: '/Photos/alumni1.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Priya Mehta', title: 'Product Manager @ Microsoft', avatarUrl: '/Photos/alumni2.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Arjun Singh', title: 'Data Scientist @ Amazon', avatarUrl: '/Photos/alumni3.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Sneha Reddy', title: 'UX Designer @ Adobe', avatarUrl: '/Photos/alumni4.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Vikram Rao', title: 'Cloud Architect @ Oracle', avatarUrl: '/Photos/alumni5.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Isha Gupta', title: 'Frontend Developer @ Netflix', avatarUrl: '/Photos/alumni6.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Rohan Sharma', title: 'Software Engineer @ Google', avatarUrl: '/Photos/alumni1.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Priya Mehta', title: 'Product Manager @ Microsoft', avatarUrl: '/Photos/alumni2.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Arjun Singh', title: 'Data Scientist @ Amazon', avatarUrl: '/Photos/alumni3.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Sneha Reddy', title: 'UX Designer @ Adobe', avatarUrl: '/Photos/alumni4.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Vikram Rao', title: 'Cloud Architect @ Oracle', avatarUrl: '/Photos/alumni5.png', social: { github: '#', linkedin: '#' } },
 ];
 
 const Alumni = () => {

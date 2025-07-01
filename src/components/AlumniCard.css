@@ -49,20 +49,20 @@
   background-image: var(--behind-gradient);
 }
 
-.pc-card-wrapper:hover,
-.pc-card-wrapper.active {
+.pc-card-alumni-wrapper:hover,
+.pc-card-alumni-wrapper.active {
   --card-opacity: 1;
 }
 
-.pc-card-wrapper:hover::before,
-.pc-card-wrapper.active::before {
+.pc-card-alumni-wrapper:hover::before,
+.pc-card-alumni-wrapper.active::before {
   filter: contrast(1) saturate(2) blur(40px) opacity(1);
   transform: scale(0.9) translate3d(0, 0, 0.1px);
 }
 
-.pc-card {
+.pc-card-alumni {
   height: 80svh;
-  max-height: 540px;
+  max-height: 400px;
   display: grid;
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);
@@ -78,13 +78,13 @@
   overflow: hidden;
 }
 
-.pc-card:hover,
-.pc-card.active {
+.pc-card-alumni:hover,
+.pc-card-alumni.active {
   transition: none;
   transform: translate3d(0, 0, 0.1px) rotateX(var(--rotate-y)) rotateY(var(--rotate-x));
 }
 
-.pc-card * {
+.pc-card-alumni * {
   display: grid;
   grid-area: 1/-1;
   border-radius: var(--card-radius);
@@ -138,15 +138,15 @@
   opacity: 0;
 }
 
-.pc-card:hover .pc-shine,
-.pc-card.active .pc-shine {
+.pc-card-alumni .pc-shine,
+.pc-card-alumni.active .pc-shine {
   filter: brightness(0.5) contrast(1.5) saturate(0.5);
   animation: none;
 }
 
-.pc-card:hover .pc-shine::before,
-.pc-card.active .pc-shine::before,
-.pc-card:hover .pc-shine::after,
+.pc-card-alumni:hover .pc-shine::before,
+.pc-card-alumni.active .pc-shine::before,
+.pc-card-alumni:hover .pc-shine::after,
 .pc-card.active .pc-shine::after {
   opacity: 1;
 }
@@ -287,18 +287,19 @@
   mix-blend-mode: luminosity;
 }
 
-.pc-details {
+.pc-details-alumni {
   width: 100%;
   position: absolute;
-  top: 21em;
+  top: 14em;
   display: flex;
   flex-direction: column;
 }
 
-.pc-details h3 {
+.pc-details-alumni h3 {
   font-weight: 700;
+
   margin: 0;
-  font-size: min(3.7svh, 3em);
+  font-size: min(3svh, 4em);
   margin: 0;
   background-image: linear-gradient(to right, #ffffff, #ffffff);
   background-size: 1em 1.5em;
@@ -307,12 +308,12 @@
   -webkit-background-clip: text;
 }
 
-.pc-details p {
+.pc-details-alumni p {
   font-weight: 600;
   position: relative;
-  top: 2px;
+
   white-space: nowrap;
-  font-size: 28px;
+  font-size: 19px;
   margin: 0 auto;
   width: min-content;
   background-image: linear-gradient(to bottom, #fff, #fefefe);
@@ -454,23 +455,23 @@
   
 }
 
-.pc-social-links {
+.pc-alumni-social-links {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  gap: 4rem;
+  gap: 1.5rem;
   font-size: 3.5rem;
   pointer-events: auto;
 }
-.social-button:hover { 
+.social-alumni-button:hover { 
   color: #fff; 
   transform: translateY(-3px); 
 }
 
-.social-button {
+.social-alumni-button {
   pointer-events: auto; 
-  font-size: 3rem;
+  font-size: 2.2rem;
   width: 3rem;
   background: none;
   border: none;
