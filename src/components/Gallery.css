@@ -1,35 +1,47 @@
 .photo-gallery {
-  width: 80%;
+  width: 90%;
   margin: 100px auto;
 }
 
 .gallery-grid {
   display: grid;
   gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 250px);
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(3, 300px);
   grid-template-areas:
-    "a b b"
-    "a c d"
-    "e e d";
+    "a a b b"
+    "c d d g"
+    "e f f f";
 }
 
 .item {
-  background-color: #ccc; /* 🔄 Replace with image or gradient */
-
   background-size: cover;
   background-position: center;
+  background-color: #ccc;
+  border-radius: 12px; /* Added rounded corners for a softer look */
+  overflow: hidden; /* Ensures the zoom effect doesn't break the layout */
+  
+  /* --- START: Added Hover Effect --- */
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-Assigning layout areas
-.item1 { grid-area: a; background-image: url("/images/img1.jpg"); }
-.item2 { grid-area: b; background-image: url("/images/img2.jpg"); }
-.item3 { grid-area: c; background-image: url("/images/img3.jpg"); }
-.item4 { grid-area: d; background-image: url("/images/img4.jpg"); }
-.item5 { grid-area: e; background-image: url("/images/img5.jpg"); }
+.item:hover {
+  transform: scale(1.05); /* This makes the item "zoom in" slightly */
+  z-index: 10; /* Brings the hovered item to the front */
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+/* --- END: Added Hover Effect --- */
 
 
-/* Responsive */
+.item1 { grid-area: a; background-image: url("/images/img1.png"); }
+.item2 { grid-area: b; background-image: url("/images/img2.png"); }
+.item3 { grid-area: c; background-image: url("/images/img3.png"); }
+.item4 { grid-area: d; background-image: url("/images/img4.png"); }
+.item5 { grid-area: e; background-image: url("/images/img5.png"); }
+.item6 { grid-area: f; background-image: url("/images/img6.png"); }
+.item7 { grid-area: g; background-image: url("/images/img7.png"); }
+
 @media (max-width: 768px) {
   .gallery-grid {
     grid-template-areas: none;
@@ -38,6 +50,6 @@ Assigning layout areas
   }
 
   .item {
-    height: 200px;
+    height: 300px; /* Increased height for better mobile view */
   }
 }
