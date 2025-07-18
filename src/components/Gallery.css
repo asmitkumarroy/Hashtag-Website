@@ -1,13 +1,14 @@
 .photo-gallery {
   width: 90%;
-  margin: 100px auto;
+  margin: 100px auto 150px;
 }
 
 .gallery-grid {
   display: grid;
   gap: 25px;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 300px);
+  /* The grid-area names are defined here for the desktop layout */
   grid-template-areas:
     "a a b b"
     "c d d g"
@@ -17,39 +18,37 @@
 .item {
   background-size: cover;
   background-position: center;
-  background-color: #ccc;
-  border-radius: 12px; /* Added rounded corners for a softer look */
-  overflow: hidden; /* Ensures the zoom effect doesn't break the layout */
-  
-  /* --- START: Added Hover Effect --- */
+  background-color: #333; /* Placeholder color if image is slow to load */
+  border-radius: 12px;
+  overflow: hidden;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .item:hover {
-  transform: scale(1.05); /* This makes the item "zoom in" slightly */
-  z-index: 10; /* Brings the hovered item to the front */
+  transform: scale(1.05);
+  z-index: 10;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-/* --- END: Added Hover Effect --- */
 
-
-.item1 { grid-area: a; background-image: url("/images/img1.png"); }
-.item2 { grid-area: b; background-image: url("/images/img2.png"); }
-.item3 { grid-area: c; background-image: url("/images/img3.png"); }
-.item4 { grid-area: d; background-image: url("/images/img4.png"); }
-.item5 { grid-area: e; background-image: url("/images/img5.png"); }
-.item6 { grid-area: f; background-image: url("/images/img6.png"); }
-.item7 { grid-area: g; background-image: url("/images/img7.png"); }
-
+/* --- MOBILE & TABLET STYLES --- */
 @media (max-width: 768px) {
   .gallery-grid {
-    grid-template-areas: none;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    /* --- THIS IS THE FIX --- */
+    /* We are changing the display mode entirely for mobile. */
+    display: block;
   }
 
   .item {
-    height: 300px; /* Increased height for better mobile view */
+    height: 300px;
+    /* Add a margin to create space between stacked items */
+    margin-bottom: 20px;
+  }
+}
+
+/* --- SMALL MOBILE STYLES --- */
+@media (max-width: 480px) {
+  .item {
+    height: 250px;
   }
 }

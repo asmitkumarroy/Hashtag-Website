@@ -13,10 +13,10 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
-  padding: 1% 2%; /* Adjusted padding slightly */
+  padding: 1% 2%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  width: auto; /* FIX #1: Changed from 30% to auto */
+  width: auto;
   max-width: 1200px;
 }
 
@@ -28,7 +28,6 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-  /* FIX #2: Removed 'flex-wrap: wrap;' */
 }
 
 .navbar-links li a {
@@ -37,7 +36,7 @@
   font-weight: 500;
   font-size: 25px;
   transition: color 0.3s ease;
-  white-space: nowrap; /* Ensures link text doesn't break */
+  white-space: nowrap;
 }
 
 .navbar-links li a:hover {
@@ -46,13 +45,12 @@
     0 0 4.5px #ffffff8d;
 }
 
-/* Menu icon is hidden by default on larger screens */
 .menu-icon {
   display: none;
 }
 
 
-/* --- MOBILE & TABLET STYLES (Sidebar) --- */
+/* --- MOBILE & TABLET STYLES --- */
 @media (max-width: 768px) {
   .navbar {
     position: static;
@@ -63,7 +61,6 @@
     -webkit-backdrop-filter: none;
     padding: 0;
     width: auto;
-    /* Reset inherited desktop positioning */
     left: unset;
     transform: unset;
   }
@@ -85,7 +82,6 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* --- Sidebar Styles (No changes here) --- */
   .navbar-links {
     position: fixed;
     top: 0;
@@ -113,5 +109,24 @@
   
   .navbar-links li a {
     font-size: 22px;
+  }
+}
+
+/* --- SMALL MOBILE STYLES --- */
+@media (max-width: 480px) {
+  .menu-icon {
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .navbar-links li a {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    gap: 25px;
+    width: 80%; /* Make sidebar slightly wider */
   }
 }

@@ -1,5 +1,4 @@
 .hero-content{
-    
     height:70vh;
     width:100%;
     display: flex;
@@ -14,50 +13,43 @@
 
 .main-header{
   font-size: 90px;
-  margin: 0; /* ✅ this removes the default top & bottom spacing */
+  margin: 0;
   background: linear-gradient(
     to right,
     rgb(162, 162, 162) 0%,
     rgb(255, 255, 255) 100%
   );
-   -webkit-background-clip: text;
+    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* For Firefox */
+  background-clip: text;
   color: transparent;
- 
 }
-
-
 
 .body-text{
     background-color: white;
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* For Firefox */
+  background-clip: text;
   color: transparent;
   margin-left: 15%;
   width: 70%;
   font-size: 30px;
   text-align: justify;
   margin-bottom: 350px;
-  
 }
 
 .other-Header{
     font-size: 50px;
-    /* margin-left: 15%; */
     text-align: center;
     background: linear-gradient(
     to right,
     rgb(162, 162, 162) 0%,
     rgb(255, 255, 255) 100%
   );
-   -webkit-background-clip: text;
+    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* For Firefox */
+  background-clip: text;
   color: transparent;
-
-
 }
 
 .footer {
@@ -113,4 +105,43 @@
 
 .footer-right li:hover {
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+
+/* --- SMALL MOBILE STYLES --- */
+@media (max-width: 480px) {
+  .main-header {
+    font-size: 48px; /* Drastically smaller for small screens */
+  }
+
+  .hero-content {
+    margin-bottom: 150px; /* Reduced margin */
+    height: 50vh;
+  }
+
+  .other-Header {
+    font-size: 36px;
+  }
+  
+  .body-text {
+    font-size: 18px; /* Much more readable size */
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 150px; /* Reduced margin */
+  }
+
+  .footer {
+    margin: 0 5%;
+    padding: 50px 0;
+    gap: 50px;
+  }
+  
+  .footer-header {
+    font-size: 36px;
+  }
+
+  .footer-text,
+  .footer-right li {
+    font-size: 16px;
+  }
 }
