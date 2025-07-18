@@ -348,7 +348,7 @@
     max-height: 450px;
   }
   .pc-details {
-    top: 2em;
+    top: 15em;
   }
   .pc-details h3 {
     font-size: min(4svh, 2.5em);
@@ -387,7 +387,7 @@
     max-height: 380px;
   }
   .pc-details {
-    top: 1.5em;
+    top: 15em;
   }
   .pc-details h3 {
     font-size: min(3.5svh, 2em);
@@ -479,3 +479,47 @@
   transition: all 0.3s ease; 
   cursor: pointer; 
 }
+
+@media (max-width: 768px) {
+.pc-card {
+  height: 70svh;
+  max-height: 450px;
+}
+.pc-details {
+  top: 2em;
+}
+  /* ... other 768px styles ... */
+
+  /* FIX: Adjust social links for tablets */
+  .pc-social-links {
+    gap: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .social-button {
+    font-size: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+.pc-card {
+  height: 60svh;
+  max-height: 380px;
+
+}
+
+/* ... other 480px styles ... */
+
+  /* FIX: Further adjust social links for small phones */
+  .pc-social-links {
+    gap: 1.5rem; /* Reduced gap */
+    font-size: 2rem; /* Reduced icon container size */
+  }
+
+  .social-button {
+    font-size: 1.5rem; /* Reduced icon size */
+    width: 1.5rem;
+  }
+}
+
+/* ... other media queries ... */
