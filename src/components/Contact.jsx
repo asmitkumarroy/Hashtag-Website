@@ -16,9 +16,9 @@ const Contact = () => {
     const formData = new FormData(e.target);
     
     formData.append("access_key", "68f7100c-97d3-47bc-b8b6-20cc83152b6b"); 
+    formData.append("subject", "New message from Hashtag Website"); 
     
-    const selectedSubject = formData.get('subject');
-    formData.append("subject", `New message from Hashtag Website: ${selectedSubject}`);
+    
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -93,15 +93,7 @@ const Contact = () => {
               <label htmlFor="email" className="form-label">Email</label>
               <input type="email" id="email" name="email" className="form-input" placeholder="you@example.com" required />
             </div>
-            <div className="form-group">
-              <label htmlFor="subject" className="form-label">Subject</label>
-              <select id="subject" name="subject" className="form-input" defaultValue="Join Hashtag" required>
-                <option value="Join Hashtag">Join Hashtag</option>
-                <option value="Sponsorship related">Sponsorship related</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Others">Others</option>
-              </select>
-            </div>
+            
             <div className="form-group">
               <label htmlFor="message" className="form-label">Message</label>
               <textarea id="message" name="message" className="form-textarea" rows="5" placeholder="Your message..." required></textarea>

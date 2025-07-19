@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react"
-import { useMousePosition } from "./Usemouseposition"
 import "./SparklesCore.css" // we'll create this next
 
 export const SparklesCore = ({
@@ -12,7 +11,6 @@ export const SparklesCore = ({
   particleColor = "#FFFFFF",
 }) => {
   const canvasRef = useRef(null)
-  const mousePosition = useMousePosition()
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 })
 
   useEffect(() => {
@@ -52,15 +50,6 @@ export const SparklesCore = ({
         if (this.x < 0) this.x = canvas.width
         if (this.y > canvas.height) this.y = 0
         if (this.y < 0) this.y = canvas.height
-
-        const dx = mousePosition.x - this.x
-        const dy = mousePosition.y - this.y
-        const distance = Math.sqrt(dx * dx + dy * dy)
-        if (distance < 100) {
-          const angle = Math.atan2(dy, dx)
-          this.x -= Math.cos(angle) * 1
-          this.y -= Math.sin(angle) * 1
-        }
       }
 
       draw() {
@@ -106,7 +95,7 @@ export const SparklesCore = ({
       window.removeEventListener("resize", handleResize)
       cancelAnimationFrame(animationFrameId)
     }
-  }, [maxSize, minSize, particleColor, particleDensity, mousePosition.x, mousePosition.y])
+  }, [maxSize, minSize, particleColor, particleDensity])
 
   return (
     <canvas
