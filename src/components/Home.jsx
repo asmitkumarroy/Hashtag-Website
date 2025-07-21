@@ -41,7 +41,7 @@ const Home = () => {
             {/* Instagram Link */}
             <li className="icon-link">
               <a
-                href="https://www.instagram.com/hashtag.jemtec/"
+                href="https://www.instagram.com/hashtag.jemtec/ "
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
