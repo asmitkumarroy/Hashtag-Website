@@ -4,7 +4,10 @@ import sanityClient from '../client.js';
 import './Blogs.css';
 
 const Blogs = () => {
+  // Add state for loading and error
   const [posts, setPosts] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     sanityClient
@@ -20,12 +23,33 @@ const Blogs = () => {
           }
         }`
       )
-      .then((data) => setPosts(data))
-      .catch(console.error);
+      .then((data) => {
+        setPosts(data);
+        setIsLoading(false); // Set loading to false on success
+      })
+      .catch((err) => {
+        console.error(err);
+        setError("Failed to load posts. Please try again later."); // Set error message
+        setIsLoading(false); // Also set loading to false on error
+      });
   }, []);
 
-  if (!posts) {
+  // Updated conditional rendering
+  if (isLoading) {
     return <div className="blog-loading">Loading Posts...</div>;
+  }
+
+  if (error) {
+    return <div className="blog-error">{error}</div>; // Display the error to the user
+  }
+
+  if (!posts || posts.length === 0) {
+    return (
+      <div className="new-page-container blogs-page">
+        <h1 className="new-page-main-title">Our Blog</h1>
+        <p className="page-subtitle">No posts found. Check back soon!</p>
+      </div>
+    );
   }
 
   return (
@@ -33,30 +57,24 @@ const Blogs = () => {
       <h1 className="new-page-main-title">Our Blog</h1>
       <p className="page-subtitle">Thoughts, Tutorials, and Updates from the Hashtag Team.</p>
       <div className="blog-grid">
-        {posts &&
-          posts.map((post) => (
-            <Link to={`/blogs/${post.slug.current}`} key={post.slug.current} className="blog-card-link">
-              <article className="blog-card">
-                <span className="blog-card-image-container">
-                  {/* THE FIX: 
-                    We check if 'post.mainImage' exists before trying to render the img tag.
-                    The '?' is called optional chaining. It safely accesses nested properties.
-                    If mainImage or its asset is missing, it simply does nothing instead of crashing.
-                  */}
-                  {post.mainImage?.asset?.url && (
-                    <img
-                      src={post.mainImage.asset.url}
-                      alt={post.title}
-                      className="blog-card-image"
-                    />
-                  )}
-                </span>
-                <span className="blog-card-content">
-                  <h3 className="blog-card-title">{post.title}</h3>
-                </span>
-              </article>
-            </Link>
-          ))}
+        {posts.map((post) => (
+          <Link to={`/blogs/${post.slug.current}`} key={post.slug.current} className="blog-card-link">
+            <article className="blog-card">
+              <span className="blog-card-image-container">
+                {post.mainImage?.asset?.url && (
+                  <img
+                    src={post.mainImage.asset.url}
+                    alt={post.title}
+                    className="blog-card-image"
+                  />
+                )}
+              </span>
+              <span className="blog-card-content">
+                <h3 className="blog-card-title">{post.title}</h3>
+              </span>
+            </article>
+          </Link>
+        ))}
       </div>
     </div>
   );
