@@ -10,6 +10,7 @@ const Home = () => {
         <div className="hero-content">
           <h1 className="main-header">Think. <span className="mobile-break"> Build.</span>
             <span className="mobile-break"> Thrive.</span><br />
+
           </h1>
           <h1 className="main-header-together">Together at HASHTAG.</h1>
         </div>
@@ -24,6 +25,7 @@ const Home = () => {
       <p className="body-text">HASHTAG is the tech pulse of JIMS Greater Noida — not just a club, but a movement built into the core of the campus. Born in classrooms and raised in computer labs, HASHTAG was founded with the vision to turn ideas into innovation. With full support from JIMS — mentorship, resources, and the freedom to create — we’ve grown into a student-powered force of creativity and code. Every workshop, every hackathon, every project we lead is a reflection of JIMS’ trust in its students and belief in experiential learning. Together, we don’t just participate in tech — we shape it. JIMS provides the launchpad, HASHTAG brings the momentum. It’s a collaboration where passion meets purpose, and a campus becomes a community of creators. This is more than partnership — it’s a shared mission to lead the future of tech.</p>
 
       <Gallery />
+
 
       <div className="footer">
         <div className="footer-left">
@@ -81,6 +83,7 @@ const Home = () => {
                   <span>X (Twitter)</span>
                 </div>
               </a>
+
             </li>
           </ul>
         </div>
