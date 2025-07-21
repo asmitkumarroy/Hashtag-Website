@@ -22,7 +22,7 @@ const teamData = {
       { name: 'Harsh Naagar', title: 'Co-Head', avatarUrl: '/Photos/Harsh.png', social: { github: 'https://github.com/HarshNaagar77', linkedin: 'https://www.linkedin.com/in/harsh-naagar-a4b5b8207',instagram: "https://www.instagram.com/hnaagar04" } }
     ],
     members: [
-      { name: 'Ayush Kumar Singh', title: 'Member', avatarUrl: '/Photos/Ayush_Kumar.png', social: { github: 'https://github.com/ayushkumarsingh14', linkedin: 'https://www.linkedin.com/in/ayush-kumar-singh-7ba5862ba',instagram: "https://www.instagram.com/ayush.feb14/" } },
+      { name: 'Ayush Kumar S.', title: 'Member', avatarUrl: '/Photos/Ayush_Kumar.png', social: { github: 'https://github.com/ayushkumarsingh14', linkedin: 'https://www.linkedin.com/in/ayush-kumar-singh-7ba5862ba',instagram: "https://www.instagram.com/ayush.feb14/" } },
       { name: 'Ankit Choudhary', title: 'Member', avatarUrl: '/Photos/Ankit.png', social: { github: 'https://github.com/ankit77003', linkedin: 'https://www.linkedin.com/in/ankit-choudhary-978a11266/',instagram: "https://www.instagram.com/ankitchoudhary4141/" } },
       { name: 'Aman Verma', title: 'Member', avatarUrl: '/Photos/Aman.png',social: { github: 'https://github.com/Batman0003333', linkedin: 'https://www.linkedin.com/in/aman-v-64223a293',instagram: "https://www.instagram.com/er.a_m_n_?igsh=MTczdXUwbzNheWdweA==" } },
       //{ name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.png', social: { github: '#', linkedin: '#',instagram: "#" } },
@@ -30,7 +30,7 @@ const teamData = {
   },
   graphics: {
     leads: [
-        { name: 'Md. Abdullah Meraj', title: 'Head', avatarUrl: '/Photos/Abdullah.png',social: { github: 'https://github.com/mohdabdullahmeraj', linkedin: 'https://www.linkedin.com/in/mohdabdullahmeraj/',instagram: "https://www.instagram.com/mohdabdullahmeraj/" } },
+        { name: 'M. Abdullah Meraj', title: 'Head', avatarUrl: '/Photos/Abdullah.png',social: { github: 'https://github.com/mohdabdullahmeraj', linkedin: 'https://www.linkedin.com/in/mohdabdullahmeraj/',instagram: "https://www.instagram.com/mohdabdullahmeraj/" } },
         { name: 'Priyal Jain', title: 'Co-Head', avatarUrl: '/Photos/Priyal.png',social: { github: 'https://github.com/pihu404', linkedin: 'https://www.linkedin.com/in/priyal-jain-92863b282',instagram: "https://www.instagram.com/priyal2936?igsh=MW92ZDIzNW5wcnZjNA==" } }
     ],
     members: [
@@ -58,7 +58,7 @@ const teamData = {
         { name: 'Rishabh Verma', title: 'Co-Head', avatarUrl: '/Photos/Rishabh.png',social: { github: 'https://github.com/RishabhV28', linkedin: 'https://www.linkedin.com/in/rishabh-verma-9a4997262/',instagram: "https://www.instagram.com/wh0.zip__" } }
     ],
     members: [
-        { name: 'Vanshika Shrivastava', title: 'Member', avatarUrl: '/Photos/Vanshika.png',social: { github: 'https://github.com/Vanshika-Srivastava79', linkedin: 'https://www.linkedin.com/in/vanshikasrivastava79',instagram: "https://www.instagram.com/vannssszzz/" } },
+        { name: 'Vanshika S.', title: 'Member', avatarUrl: '/Photos/Vanshika.png',social: { github: 'https://github.com/Vanshika-Srivastava79', linkedin: 'https://www.linkedin.com/in/vanshikasrivastava79',instagram: "https://www.instagram.com/vannssszzz/" } },
         { name: 'Shreya Sai', title: 'Member', avatarUrl: '/Photos/Shreya.png',social: { github: 'https://github.com/sst2105', linkedin: 'https://www.linkedin.com/in/shreya-sai-thanikella/',instagram: "https://www.instagram.com/l_.shreya._l" } },
         
     ]
@@ -89,9 +89,9 @@ const Team = () => {
   return (
     <div className="new-page-container new-team-page">
       <h1 className="new-page-main-title">Meet the Team</h1>
+        <h2 className="new-team-category-title">Leadership</h2>
 
       <section className="new-team-section">
-        <h2 className="new-team-category-title">Leadership</h2>
         <div className="leaders-layout-container">
           <div className="new-team-grid leaders-top-row">
             {topRowLeaders.map((member) => ( <ProfileCard key={member.name} {...addDefaultAvatar(member)} /> ))}

@@ -11,15 +11,28 @@ body {
   padding: 50px 20px;
 }
 
-.title {
-  font-size: 36px;
-  margin-bottom: 10px;
+.new-page-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
-.subtitle {
-  font-size: 24px;
-  margin: 30px 0 20px;
-  color: #cccccc;
+.page-subtitle {
+  font-size: 1.25rem;
+  color: #9CA3AF;
+  margin-bottom: 4rem;
+}
+
+h2.subtitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #E5E7EB;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
 }
 
 .events-section {
@@ -29,59 +42,6 @@ body {
   gap: 30px;
 }
 
-.event-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  overflow: hidden;
-  max-width: 300px;
-  margin: 1rem;
-  background-color: white;
-}
-
-.event-image {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-}
-
-
-
-
-
-.event-details {
-  text-align: left;
-  flex: 1;
-}
-
-.event-details h3 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.event-details p {
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-.register-btn {
-  padding: 6px 16px;
-  font-weight: bold;
- background:linear-gradient(
-    to right,
-   rgba(255, 255, 255, 0.715) 50%
- );
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.register-btn:hover {
-  background-color: transparent;
-  color: white;
-}
 .event-card {
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 15px;
@@ -101,7 +61,13 @@ body {
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
 }
 
-
+.event-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
 
 .event-details {
   text-align: left;
@@ -111,13 +77,58 @@ body {
 .event-details h3 {
   margin: 0;
   font-size: 20px;
+  color: #FFFFFF;
 }
 
 .event-details p {
   font-size: 14px;
   margin: 10px 0;
+  color: #D1D5DB;
+  line-height: 1.6;
 }
 
+.register-btn {
+  padding: 8px 16px;
+  font-weight: bold;
+  background: #FFFFFF;
+  color: #111827;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.register-btn:hover {
+  background-color: #9CA3AF;
+}
 
+@media (max-width: 480px) {
+  .events-container {
+    padding: 40px 15px;
+  }
 
+  .new-page-main-title {
+    font-size: 2.25rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+
+  h2.subtitle {
+    font-size: 1.5rem;
+  }
+
+  .event-card {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .event-image {
+    width: 100%;
+    height: auto;
+  }
+}
