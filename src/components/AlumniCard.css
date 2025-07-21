@@ -61,14 +61,14 @@
 }
 
 .pc-card-alumni {
-  height: 70svh;
-  max-height: 400px;
-  width: 280px;
-  margin: 10px;
-  display: grid;
-  aspect-ratio: 0.718;
-  border-radius: var(--card-radius);
-  position: relative;
+    height: 40svh;
+    max-height: 230px;
+    width: 180px;
+    margin: 5px;
+    display: grid;
+    aspect-ratio: 0.718;
+    border-radius: var(--card-radius);
+    position: relative;
   background-blend-mode: color-dodge, normal, normal, normal;
   animation: glow-bg 12s linear infinite;
   box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px) calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
@@ -387,7 +387,7 @@
 
 @media (max-width: 480px) {
   .pc-card {
-    height: 60svh;
+    height: 50svh;
     max-height: 350px;
     width: 250px;
   }
@@ -430,7 +430,7 @@
 
 @media (max-width: 320px) {
   .pc-card {
-    height: 55svh;
+    height: 50svh;
     max-height: 300px;
     width: 220px;
   }

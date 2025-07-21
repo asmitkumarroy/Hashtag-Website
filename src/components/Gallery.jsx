@@ -25,7 +25,7 @@ const galleryImages = [
 const Gallery = () => {
   return (
     <section className="photo-gallery">
-      <h1 className="other-Header">Glimpses of Our Journey</h1>
+      <h1 className="gallery-Header">Glimpses of Our Journey</h1>
       <div className="gallery-grid">
         {/* Step 3: Map over the array to render each item */}
         {galleryImages.map((image) => (

@@ -1,21 +1,40 @@
-.logo{
-    display: flex;
+.logo {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-   padding: 20px;
-   box-sizing: border-box;
-  
-  
+  padding: 40px 40px; /* adds horizontal margin */
+  box-sizing: border-box;
 }
 
-.Hashtag-logo{
-    display: block;
-    height: 30px;
-    width: 30px;
+/* Logo image sizing */
+.Hashtag-Logo,
+.Jims-logo {
+  height: auto;
+  max-height: 55px;
+  width: auto;
 }
 
-.Jims-logo{
-    height: 60px;
-    width: 90px;
+/* Optional: specific sizes for each logo */
+.Hashtag-Logo {
+  max-height: 50px;
+}
+
+.Jims-logo {
+  max-height: 55px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .logo {
+    padding: 30px 20px;
+  }
+
+  .Hashtag-Logo {
+    max-height: 40px;
+  }
+
+  .Jims-logo {
+    max-height: 45px;
+  }
 }

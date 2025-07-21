@@ -1,7 +1,7 @@
 /* --- DESKTOP STYLES (Default) --- */
 .navbar {
   position: absolute;
-  top: 67px;
+  top: 45px;
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(
@@ -130,5 +130,7 @@
     width: 80%; /* Make sidebar slightly wider */
   }
 }
+
+
 
 
