@@ -8,8 +8,8 @@ const Home = () => {
     <div className="container">
       <section className="Hero-Section">
         <div className="hero-content">
-          <h1 className="main-header">Think. <span class="mobile-break"> Build.</span>
-            <span class="mobile-break"> Thrive.</span><br />
+          <h1 className="main-header">Think. <span className="mobile-break"> Build.</span>
+            <span className="mobile-break"> Thrive.</span><br />
           </h1>
           <h1 className="main-header-together">Together at HASHTAG.</h1>
         </div>
@@ -38,23 +38,49 @@ const Home = () => {
         <div className="footer-right">
           <h1 className="footer-header">Contact</h1>
           <ul>
+            {/* Instagram Link */}
             <li className="icon-link">
-              <div className="icon-text">
-                <FaInstagram className="footer-icon" />
-                <span>Instagram</span>
-              </div>
+              <a
+                href="https://www.instagram.com/hashtag.jemtec/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <div className="icon-text">
+                  <FaInstagram className="footer-icon" />
+                  <span>Instagram</span>
+                </div>
+              </a>
             </li>
+
+            {/* LinkedIn Link */}
             <li className="icon-link">
-              <div className="icon-text">
-                <FaLinkedin className="footer-icon" />
-                <span>LinkedIn</span>
-              </div>
+              <a
+                href="https://www.linkedin.com/company/hashtag-jemtec-official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <div className="icon-text">
+                  <FaLinkedin className="footer-icon" />
+                  <span>LinkedIn</span>
+                </div>
+              </a>
             </li>
+
+            {/* Twitter/X Link */}
             <li className="icon-link">
-              <div className="icon-text">
-                <FaTwitter className="footer-icon" />
-                <span>X (Twitter)</span>
-              </div>
+              <a
+                href="https://x.com/Hashtag_Jemtec"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+              >
+                <div className="icon-text">
+                  <FaTwitter className="footer-icon" />
+                  <span>X (Twitter)</span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -64,4 +90,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
