@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import sanityClient from '../client.js';
@@ -29,7 +30,8 @@ const SinglePost = () => {
           },
           body,
           "authorName": author->name,
-          "authorImage": author->image
+          "authorImage": author->image,
+          "authorBio": author->bio
         }`
       )
       .then((data) => setPost(data[0]))
@@ -45,13 +47,25 @@ const SinglePost = () => {
           <h1 className="single-post-title">{post.title}</h1>
           <div className="author-info">
             {post.authorImage && (
-              <img
-                src={urlFor(post.authorImage).url()}
-                alt={post.authorName}
-                className="author-image"
-              />
+              <div className="author-hover-container">
+                <img
+                  src={urlFor(post.authorImage).url()}
+                  alt={post.authorName}
+                  className="author-image"
+                />
+                <p className="author-name">By {post.authorName}</p>
+                {post.authorBio && (
+                  <div className="author-bio-popup">
+                    <h3>About {post.authorName}</h3>
+                    <BlockContent
+                      blocks={post.authorBio}
+                      projectId="4czbk8j7"
+                      dataset="production"
+                    />
+                  </div>
+                )}
+              </div>
             )}
-            <p className="author-name">{post.authorName}</p>
           </div>
         </header>
         {post.mainImage && (
@@ -64,7 +78,7 @@ const SinglePost = () => {
         <div className="single-post-content">
           <BlockContent
             blocks={post.body}
-            projectId="your_project_id_here" // Paste your Project ID again here
+            projectId="4czbk8j7"
             dataset="production"
           />
         </div>
