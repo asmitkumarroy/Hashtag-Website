@@ -4,7 +4,7 @@ import './Alumni.css';
 
 // Placeholder data for the Alumni page
 const alumniData = [
-  { name: 'Rohan Sharma', title: 'Software Engineer @ Google', avatarUrl: '/Photos/alumni1.png', social: { github: '#', linkedin: '#' } },
+  { name: 'Rohan Sharma', title: 'Software Engineer @ Google', avatarUrl: '/Photos/Asmit.png', social: { github: '#', linkedin: '#' } },
   { name: 'Priya Mehta', title: 'Product Manager @ Microsoft', avatarUrl: '/Photos/alumni2.png', social: { github: '#', linkedin: '#' } },
   { name: 'Arjun Singh', title: 'Data Scientist @ Amazon', avatarUrl: '/Photos/alumni3.png', social: { github: '#', linkedin: '#' } },
   { name: 'Sneha Reddy', title: 'UX Designer @ Adobe', avatarUrl: '/Photos/alumni4.png', social: { github: '#', linkedin: '#' } },
