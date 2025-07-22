@@ -16,6 +16,8 @@ function urlFor(source) {
 
 const SinglePost = () => {
   const [post, setPost] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   const { slug } = useParams();
 
   useEffect(() => {
@@ -42,11 +44,28 @@ const SinglePost = () => {
           "authorBio": author->bio
         }`
       )
-      .then((data) => setPost(data[0]))
-      .catch(console.error);
+      .then((data) => {
+        setPost(data[0]);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setError("Failed to load post. Please try again later.");
+        setIsLoading(false);
+      });
   }, [slug]);
 
-  if (!post) return <div>Loading...</div>;
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  if (!post) {
+    return <div>Post not found.</div>;
+  }
 
   return (
     <main className="single-post-page">
