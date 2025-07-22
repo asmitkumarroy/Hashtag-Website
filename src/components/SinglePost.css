@@ -5,21 +5,24 @@
 }
 
 .single-post-container {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
   overflow: hidden;
 }
 
 .single-post-header {
   padding: 30px;
   text-align: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .single-post-title {
   font-size: 2.5em;
-  color: #333;
+  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -49,7 +52,7 @@
 
 .author-name {
   font-weight: bold;
-  color: #555;
+  color: #fff;
 }
 
 .author-bio-popup {
@@ -96,14 +99,14 @@
 .single-post-content {
   padding: 30px;
   line-height: 1.8;
-  color: #444;
+  color: #f0f0f0; /* Lighter color for content */
   font-size: 1.1em;
 }
 
 .single-post-content h2,
 .single-post-content h3,
 .single-post-content h4 {
-  color: #333;
+  color: #fff;
   margin-top: 25px;
   margin-bottom: 15px;
 }
