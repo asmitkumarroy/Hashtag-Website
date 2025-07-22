@@ -292,7 +292,7 @@
 .pc-details-alumni {
   width: 100%;
   position: absolute;
-  top: 14em;
+  top: 6em;
   display: flex;
   flex-direction: column;
 }
