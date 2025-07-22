@@ -262,7 +262,7 @@ const ProfileCardComponent = ({
               }}
             />
             {showUserInfo && (
-              <div className="pc-user-info">
+              <div className="pc-user-info-alumni">
                 <div className="pc-alumni-social-links">
                   <button onClick={() => handleSocialClick(social.github)} className="social-alumni-button">
                     <FaSquareEnvelope />
@@ -271,7 +271,7 @@ const ProfileCardComponent = ({
                     <FaLinkedin />
                   </button>
                 </div>
-                <div className="pc-user-details">
+                <div className="pc-user-details-alumni">
                 </div>
               </div>
             )}
