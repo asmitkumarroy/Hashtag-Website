@@ -30,7 +30,12 @@ const SinglePost = () => {
           },
           body,
           "authorName": author->name,
-          "authorImage": author->image,
+          "authorImage": author->image{
+            asset->{
+              _id,
+              url
+            }
+          },
           "authorBio": author->bio
         }`
       )
