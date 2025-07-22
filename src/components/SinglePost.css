@@ -124,3 +124,61 @@
 .single-post-content li {
   margin-bottom: 0.5em;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .single-post-page {
+    padding: 10px;
+  }
+
+  .single-post-header {
+    padding: 20px;
+  }
+
+  .single-post-title {
+    font-size: 2em;
+  }
+
+  .single-post-hero-image {
+    height: 250px;
+  }
+
+  .single-post-content {
+    padding: 20px;
+    font-size: 1em;
+  }
+
+  .author-bio-popup {
+    width: 90%;
+    left: 5%;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .single-post-title {
+    font-size: 1.8em;
+  }
+
+  .author-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .author-name {
+    font-size: 0.9em;
+  }
+
+  .author-bio-popup {
+    bottom: 110%;
+    padding: 10px;
+  }
+
+  .author-bio-popup h3 {
+    font-size: 1em;
+  }
+
+  .author-bio-popup p {
+    font-size: 0.8em;
+  }
+}
