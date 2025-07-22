@@ -292,7 +292,7 @@
 .pc-details-alumni {
   width: 100%;
   position: absolute;
-  top: 7em;
+  top: 7.8em;
   display: flex;
   flex-direction: column;
 }
@@ -311,14 +311,14 @@
 }
 
 .pc-details-alumni p {
-  font-weight: 200;
+  font-weight: 700;
   position: relative;
 
   white-space: nowrap;
-  font-size: 12px;
+  font-size: 10px;
   margin: 0 auto;
   width: min-content;
-  background-image: linear-gradient(to bottom, #fff, #fefefe);
+  background-image: linear-gradient(to bottom, #000000, #000000);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
