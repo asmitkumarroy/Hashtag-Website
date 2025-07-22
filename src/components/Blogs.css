@@ -1,47 +1,207 @@
-.blogs-page {
+.blogs-container {
   text-align: center;
+  padding: 50px 20px;
 }
+
+.new-page-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
 .page-subtitle {
   font-size: 1.25rem;
-  color: #9CA3AF;
+  color: #E5E7EB;
+  margin-top: 0;
   margin-bottom: 4rem;
 }
+
+.blog-loading,
+.blog-error {
+  color: #F3F4F6;
+  font-size: 1.5rem;
+  padding-top: 5rem;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .blog-card-link {
   text-decoration: none;
+  color: inherit;
+  display: flex;
 }
+
 .blog-card {
-  background-color: #1a202c;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(17, 24, 39, 0);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.463);
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
 }
+
 .blog-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 191, 255, 0.2);
+  transform: translate(-2px, -2px);
+  background: rgba(1, 5, 10, 0.853);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
-.blog-card-image-container {
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.window-dots span {
   display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.file-name {
+  color: #D1D5DB;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.card-image-container {
   width: 100%;
   aspect-ratio: 16 / 9;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
 }
-.blog-card-image {
+
+.card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
-.blog-card-content {
+
+.card-body {
+  background: transparent;
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
-.blog-card-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 0.75rem 0;
+}
+
+.card-excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #E5E7EB;
+  margin: 0;
+}
+
+.card-button {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #F9FAFB;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  padding: 10px 20px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-card:hover .card-button {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 480px) {
+  .blogs-container {
+    padding: 30px 15px; 
+  }
+
+  .new-page-main-title {
+    font-size: 2.25rem; 
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem; 
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem; 
+  }
+
+  .card-body {
+    padding: 1.25rem; 
+  }
+
+  .file-name{
+    text-align: right;
+    padding-left: 10px;
+  }
+
+  .card-title {
+    font-size: 1.5rem; 
+  }
+
+  .card-excerpt {
+    font-size: 0.95rem; 
+  }
+
+  .card-button {
+    width: 100%; 
+    padding: 12px 20px;
+  }
 }

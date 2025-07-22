@@ -552,6 +552,10 @@
 
 }
 
+.pc-details{
+  top: 15em;
+}
+
 /* ... other 480px styles ... */
 
   /* FIX: Further adjust social links for small phones */

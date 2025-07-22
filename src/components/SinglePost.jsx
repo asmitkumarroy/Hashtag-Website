@@ -1,18 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import sanityClient from '../client.js';
 import BlockContent from '@sanity/block-content-to-react';
-import imageUrlBuilder from '@sanity/image-url';
-import './SinglePost.css';
-
-const builder = imageUrlBuilder({
-  projectId: '4czbk8j7',
-  dataset: 'production',
-});
-function urlFor(source) {
-  return builder.image(source);
-}
+import './SinglePost.css'; // We will update this file
 
 const SinglePost = () => {
   const [post, setPost] = useState(null);
@@ -35,17 +25,16 @@ const SinglePost = () => {
           },
           body,
           "authorName": author->name,
-          "authorImage": author->image{
-            asset->{
-              _id,
-              url
-            }
-          },
+          "authorImage": author->image.asset->url,
           "authorBio": author->bio
         }`
       )
       .then((data) => {
-        setPost(data[0]);
+        if (data && data.length > 0) {
+          setPost(data[0]);
+        } else {
+          setError("Post not found.");
+        }
         setIsLoading(false);
       })
       .catch((err) => {
@@ -56,15 +45,11 @@ const SinglePost = () => {
   }, [slug]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className="single-post-loading">Loading...</div>;
   }
 
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
-  if (!post) {
-    return <div>Post not found.</div>;
+  if (error || !post) {
+    return <div className="single-post-error">{error || 'Post not found.'}</div>;
   }
 
   return (
@@ -72,43 +57,52 @@ const SinglePost = () => {
       <article className="single-post-container">
         <header className="single-post-header">
           <h1 className="single-post-title">{post.title}</h1>
-          <div className="author-info">
-            {post.authorImage && (
+          {post.authorName && (
+            <div className="author-info">
               <div className="author-hover-container">
-                <img
-                  src={urlFor(post.authorImage).url()}
-                  alt={post.authorName}
-                  className="author-image"
-                />
+                {post.authorImage && (
+                  <img
+                    src={post.authorImage}
+                    alt={post.authorName}
+                    className="author-image"
+                  />
+                )}
                 <p className="author-name">By {post.authorName}</p>
                 {post.authorBio && (
                   <div className="author-bio-popup">
                     <h3>About {post.authorName}</h3>
                     <BlockContent
                       blocks={post.authorBio}
-                      projectId="4czbk8j7"
-                      dataset="production"
+                      projectId={sanityClient.config().projectId}
+                      dataset={sanityClient.config().dataset}
                     />
                   </div>
                 )}
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </header>
+        
         {post.mainImage && (
-          <img
-            className="single-post-hero-image"
-            src={post.mainImage.asset.url}
-            alt={post.title}
-          />
+          <div className="single-post-hero-image-container">
+            <img
+              className="single-post-hero-image"
+              src={post.mainImage.asset.url}
+              alt={post.title}
+            />
+          </div>
         )}
-        <div className="single-post-content">
-          <BlockContent
-            blocks={post.body}
-            projectId="4czbk8j7"
-            dataset="production"
-          />
+
+        <div className="single-post-content-wrapper">
+            <div className="single-post-content">
+                <BlockContent
+                    blocks={post.body}
+                    projectId={sanityClient.config().projectId}
+                    dataset={sanityClient.config().dataset}
+                />
+            </div>
         </div>
+
       </article>
     </main>
   );
