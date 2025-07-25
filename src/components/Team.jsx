@@ -37,7 +37,7 @@ const teamData = {
         { name: 'Avishka Bhardwaj', title: 'Member', avatarUrl: '/Photos/Avishka.png',social: { github: 'https://github.com/avishkabhardwaj', linkedin: 'https://www.linkedin.com/in/avishka-bhardwaj-091807327',instagram: "https://www.instagram.com/avishka.20?utm_source=qr&igsh=MTNzZ2I3cDdsYWV2NQ==" } },
         { name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.png', social: { github: 'https://github.com/niharikakumari23', linkedin: 'https://www.linkedin.com/in/niharika-k-71b35730a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/niha.stappen_" } },
         //{ name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.png',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Anantabh Kashyup', title: 'Member', avatarUrl: '/Photos/Arin.png',social: { github: 'https://github.com/arxnkshyp/', linkedin: 'https://www.linkedin.com/in/arin-kashyap/',instagram: "https://www.instagram.com/arxnkshyp/" } }
+        { name: 'Anantabh Kashyap', title: 'Member', avatarUrl: '/Photos/Arin.png',social: { github: 'https://github.com/arxnkshyp/', linkedin: 'https://www.linkedin.com/in/arin-kashyap/',instagram: "https://www.instagram.com/arxnkshyp/" } }
     ]
   },
   management: {
