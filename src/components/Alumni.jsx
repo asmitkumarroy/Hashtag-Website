@@ -7,7 +7,7 @@ const alumniData = [
   { name: 'Nishit Mehta', title: 'Application Engineer @Quadrafort', avatarUrl: '/Photos/Nishit.png', social: { github: 'mailto:nishitmehta@gmail.com', linkedin: 'https://www.linkedin.com/in/nishitmehta-/' } },
   { name: 'Manav Sharma', title: 'Software Engineer @ Irdeto', avatarUrl: '/Photos/Manav.jpeg', social: { github: 'mailto:manavcool2000@gmail.com', linkedin: 'https://www.linkedin.com/in/manav-sharma-007' } },
   { name: 'Agamjot Singh', title: 'Full Stack Developer @ Mojo Web', avatarUrl: '/Photos/Agamjot.jpg', social: { github: 'mailto:agamjotsingh1801@gmail.com', linkedin: 'https://www.linkedin.com/in/agamjot-singh' } },
-  { name: 'Divyanshu Singh', title: 'Founder @2ByteCode', avatarUrl: '/Photos/Divyanshu.jpeg', social: { github: 'mailto:divyanshu20029@gmail.com', linkedin: 'https://www.linkedin.com/in/divyanshu-singh-346881229/' } },
+  { name: 'Divyanshu S', title: 'Founder @2ByteCode', avatarUrl: '/Photos/Divyanshu.jpeg', social: { github: 'mailto:divyanshu20029@gmail.com', linkedin: 'https://www.linkedin.com/in/divyanshu-singh-346881229/' } },
   { name: 'Satyajeet Sau', title: 'Engineer @IUS Digital Solutions', avatarUrl: '/Photos/satya.jpg', social: { github: 'mailto:sausatyajeet100@gmail.com', linkedin: 'https://www.linkedin.com/in/satyajeet-sau-53a315248/' } },
   { name: 'Mayank Pruthi', title: 'Frontend Dev @White Light IT', avatarUrl: '/Photos/Mayank.jpg', social: { github: 'mailto:pruthimayank2003@gmail.com', linkedin: 'https://www.linkedin.com/in/pruthimayank/' } },
   { name: 'Mehul Anand', title: 'Intern @IIT Delhi', avatarUrl: '/Photos/Mehul.jpeg', social: { github: 'mailto:mehulanand78@gmail.com', linkedin: 'https://www.linkedin.com/in/mehulxyz/' } },
