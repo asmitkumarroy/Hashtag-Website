@@ -46,7 +46,7 @@ const teamData = {
         { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain.png',social: { github: 'https://github.com/Akshatjain2411', linkedin: 'https://www.linkedin.com/in/Akshatjain',instagram: "https://www.instagram.com/akshatjain2411" } }
     ],
     members: [
-        { name: 'Atuyla', title: 'Member', avatarUrl: '/Photos/Atulya.png',social: { github: 'https://github.com/atulya-mukesh', linkedin: 'https://www.linkedin.com/in/atulya-mukesh-12716a2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/atulya.mukesh/profilecard/?igsh=MThyenFxOTEydWZ5Zw==" } },
+        { name: 'Atulya Mukesh', title: 'Member', avatarUrl: '/Photos/Atulya.png',social: { github: 'https://github.com/atulya-mukesh', linkedin: 'https://www.linkedin.com/in/atulya-mukesh-12716a2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/atulya.mukesh/profilecard/?igsh=MThyenFxOTEydWZ5Zw==" } },
         { name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.png',social: { github: 'https://github.com/Ank77r', linkedin: 'http://www.linkedin.com/in/777-ankur-pandey',instagram: "https://www.instagram.com/vm_studios_official/" } },
         //{ name: 'Atula (3)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
         //{ name: 'Atula (4)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
