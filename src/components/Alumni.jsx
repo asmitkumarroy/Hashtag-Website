@@ -15,7 +15,7 @@ const alumniData = [
   { name: 'Tanuja Pujari', title: 'Ex Software Dev Intern @SUEZ',  avatarUrl: '/Photos/Tanuja.jpg', social: { github: 'mailto:tanujapujari2004@gmail.com', linkedin: 'https://www.linkedin.com/in/tanujapujari' } },
   { name: 'Charu Aggarwal', title: ' System Engineer @TCS', avatarUrl: '/Photos/charu.jpeg', social: { github: 'mailto:01charuaggarwal@gmail.com', linkedin: 'https://www.linkedin.com/in/1charuaggarwal/' } },
   { name: 'Nikhil Aswal', title: 'Frontend Dev @Staar Payout', avatarUrl: '/Photos/Nikhil.jpg', social: { github: 'mailto:nikhilaswal1913@gmail.com', linkedin: 'https://www.linkedin.com/in/nikhil-aswal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' } },
-  { name: 'Kunal Singh Bisht ', title: 'Tech Intern @ Spay India', avatarUrl: '/Photos/Kunal.jpg', social: { github: 'mailto:kunalsingh92386@gmail.com', linkedin: 'https://www.linkedin.com/in/kunal-singh-bisht-537664266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' } },
+  { name: 'Kunal Singh', title: 'Tech Intern @ Spay India', avatarUrl: '/Photos/Kunal.jpg', social: { github: 'mailto:kunalsingh92386@gmail.com', linkedin: 'https://www.linkedin.com/in/kunal-singh-bisht-537664266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' } },
   
 ];
 
