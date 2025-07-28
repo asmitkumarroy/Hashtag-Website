@@ -10,8 +10,8 @@ import './Team.css';
 // Do not change any other data only change this data structure to match the official names and roles you provided.
 const teamData = {
   leaders: [
-    { name: 'Neelesh Kumar', title: 'Vice-President', avatarUrl: '/Photos/Neelesh.png',social: { github: 'https://github.com/neeleshkr22', linkedin: 'https://www.linkedin.com/in/neelesh-kumar-rana/',instagram: "https://www.instagram.com/i.neeleshk" } },
     { name: 'Asmit Kumar Roy', title: 'President', avatarUrl: '/Photos/Asmit.png', social: { github: 'https://github.com/asmitkumarroy', linkedin: 'https://www.linkedin.com/in/asmit-kumar-roy',instagram: "https://www.instagram.com/_asmit_2304"} },
+    { name: 'Neelesh Kumar', title: 'Vice-President', avatarUrl: '/Photos/Neelesh.png',social: { github: 'https://github.com/neeleshkr22', linkedin: 'https://www.linkedin.com/in/neelesh-kumar-rana/',instagram: "https://www.instagram.com/i.neeleshk" } },
     { name: 'Akshat Tyagi', title: 'Secretary', avatarUrl: '/Photos/Akshat_Tyagi.png', social: { github: 'https://github.com/DastroG/', linkedin: 'https://www.linkedin.com/in/xyz/',instagram: "https://www.instagram.com/akshattyagi_17/" } },
     { name: 'Kangna Shrivastava', title: 'Treasurer', avatarUrl: '/Photos/Kangna.png', social: { github: 'https://github.com/KangnaShrivastva', linkedin: 'http://www.linkedin.com/in/kangna-shrivastva-9b542523a',instagram: "https://www.instagram.com/kangnaa._?igsh=MWVuNmcwMzFtMzc0aw==" } },
     { name: 'Rishabh Verma', title: 'Deputy Head',avatarUrl: '/Photos/Rishabh.png', social: { github: 'https://github.com/RishabhV28', linkedin: 'https://www.linkedin.com/in/rishabh-verma-9a4997262/',instagram: "https://www.instagram.com/wh0.zip__" } },
