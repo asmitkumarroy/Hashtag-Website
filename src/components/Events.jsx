@@ -1,6 +1,6 @@
 import React from "react";
 import "./Events.css";
-import csImage from "../assets/eventposters/cs.png";
+import csImage from "../assets/eventposters/cs.jpg";
 import vctImage from "../assets/eventposters/vct.jpg";
 import ideautsavImage from "../assets/eventposters/ideautsav.jpg";
 import brandbrawlImage from "../assets/eventposters/brandbrawl.jpg";
@@ -9,14 +9,21 @@ import treasurehuntImage from "../assets/eventposters/treasurehunt.jpg";
 import codetrekrelayImage from "../assets/eventposters/codetrekrelay.jpg";
 import codetrekImage from "../assets/eventposters/codetrek.jpg";
 
+
+const upcomingEvent = {
+  title: 'TroubleShoot Ideathon',
+  description: `The TroubleShoot ideathon is an event one of its kind. 
+  Students from all over the region will be submitting their ideas along with a detailed presentation till 22nd August out of which final teams will be selected for the final round at Microsoft Office Noida on 30th August 2025. 
+  Where they will have the opportunity to Pitch their ideas in front of Microsoft Employees and attend valuable Knowledge Sessions. 
+  Winners will be awarded an attractive cash prize as well as certificates and swags to flaunt.`,
+  image: csImage, 
+  registerUrl: 'https://reskilll.com/hack/troubleshoot', //google form link for registration
+};
+
+
+
 const events = {
-  upcoming: [
-    {
-      title: 'Coming Soon',
-      description: 'Exciting events are on the horizon. Stay tuned!',
-      image: csImage,
-    },
-  ],
+  
   past: [
     {
       title: 'Hack Battle',
@@ -74,14 +81,25 @@ const EventCard = ({ title, description, image, isPast }) => (
 const Events = () => {
   return (
     <div className="events-container">
-      <h1 className="new-page-main-title">Our Events</h1>
-      <p className="page-subtitle">A chronicle of our past triumphs and future challenges.</p>
-
-      <h2 className="subtitle">Upcoming Events</h2>
-      <div className="events-section">
-        {events.upcoming.map((event, idx) => (
-          <EventCard key={idx} {...event} isPast={false} />
-        ))}
+      <h2 className="subtitle">Upcoming Event</h2>
+      <div className="upcoming-event-card">
+        <img
+          src={upcomingEvent.image}
+          alt={upcomingEvent.title}
+          className="event-image"
+        />
+        <div className="event-details">
+          <h3>{upcomingEvent.title}</h3>
+          <p>{upcomingEvent.description}</p>
+          <a
+            href={upcomingEvent.registerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="register-btn"
+          >
+            Register
+          </a>
+        </div>
       </div>
 
       <h2 className="subtitle">Past Events</h2>
@@ -93,5 +111,6 @@ const Events = () => {
     </div>
   );
 };
+
 
 export default Events;
