@@ -1,4 +1,3 @@
-import React from "react";
 import "./Home.css"
 import Gallery from './Gallery';
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -17,13 +16,51 @@ const Home = () => {
 
       <h1 className="other-Header">The HASHTAG Society</h1>
       <p className="body-text">Founded in the year 2019, HashTag aims to nurture knowledge, opportunities, experience and collaborations within students. With a vision rooted in enriching the student coding culture, Hashtag pulses with ideas, energy and moments that unite learners.
-        Hashtag is not just a technical society, it's a platform that welcomes students across all levels of experience, fostering a culture of peer learning and inclusive growth. The society welcomes participants from all technical domains eager to build, learn and grow.
+        Hashtag is not just a technical society, it&#39;s a platform that welcomes students across all levels of experience, fostering a culture of peer learning and inclusive growth. The society welcomes participants from all technical domains eager to build, learn and grow.
         The society has been actively organizing events, hackathons, and tech competitions felicitating its participants and the winners for their efforts and creativity. With every passing year, Hashtag continues to grow- inspiring creativity, building a community and shaping the future of student innovation..</p>
 
       <h1 className="other-Header">Our Relations with JIMS</h1>
       <p className="body-text">HASHTAG is the tech pulse of JIMS Greater Noida — not just a club, but a movement built into the core of the campus. Born in classrooms and raised in computer labs, HASHTAG was founded with the vision to turn ideas into innovation. With full support from JIMS — mentorship, resources, and the freedom to create — we’ve grown into a student-powered force of creativity and code. Every workshop, every hackathon, every project we lead is a reflection of JIMS’ trust in its students and belief in experiential learning. Together, we don’t just participate in tech — we shape it. JIMS provides the launchpad, HASHTAG brings the momentum. It’s a collaboration where passion meets purpose, and a campus becomes a community of creators. This is more than partnership — it’s a shared mission to lead the future of tech.</p>
 
-      <Gallery />
+      {/* <h1 className="other-Header">Our Sponsors</h1>
+      <div className="sponsors-section">
+        <div className="sponsors-grid">
+          <a href="https://microsoft.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="https://img.logo.dev/microsoft.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="Microsoft" />
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="https://img.logo.dev/github.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="GitHub" />
+            </div>
+          </a>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="https://img.logo.dev/google.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="Google" />
+            </div>
+          </a>
+          <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="https://img.logo.dev/aws.amazon.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="AWS" />
+            </div>
+          </a>
+          <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="https://img.logo.dev/vercel.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="Vercel" />
+            </div>
+          </a>
+          <a href="https://mongodb.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="https://img.logo.dev/mongodb.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="MongoDB" />
+            </div>
+          </a>
+        </div>
+      </div> */}
+
+      <div className="gallery-header">
+        <Gallery />
+      </div>
 
       <div className="footer">
         <div className="footer-left">

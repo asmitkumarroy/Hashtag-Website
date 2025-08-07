@@ -16,7 +16,7 @@
   font-size: 16px;
   animation: scroll-left 30s linear infinite;
   padding-left: 100%;
-  
+}
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);
