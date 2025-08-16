@@ -162,13 +162,14 @@ const Gallery = () => {
       {selectedImage && (
         <div className="lightbox-overlay" onClick={closeLightbox}>
           <div className="lightbox-container" onClick={(e) => e.stopPropagation()}>
-            <button className="lightbox-close" onClick={closeLightbox}>
+            <button className="lightbox-close" onClick={closeLightbox} aria-label="Close gallery">
               ✕
             </button>
             
             <button 
               className="lightbox-nav lightbox-prev" 
               onClick={() => navigateImage('prev')}
+              aria-label="Previous image"
             >
               ‹
             </button>
@@ -195,6 +196,7 @@ const Gallery = () => {
             <button 
               className="lightbox-nav lightbox-next" 
               onClick={() => navigateImage('next')}
+              aria-label="Next image"
             >
               ›
             </button>

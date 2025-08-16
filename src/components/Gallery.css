@@ -378,11 +378,24 @@
   }
 
   .lightbox-prev {
-    left: -65px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .lightbox-next {
-    right: -65px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .lightbox-close {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    z-index: 1002;
   }
 
   .item-title {
@@ -413,14 +426,21 @@
   .lightbox-container {
     max-width: 98vw;
     max-height: 98vh;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
   }
 
   .lightbox-image-container {
     padding: 15px;
+    padding-bottom: 0;
   }
 
   .lightbox-info {
+    flex: none;
     padding: 15px;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 140px; /* Increased space for counter and navigation */
   }
 
   .lightbox-title {
@@ -429,32 +449,74 @@
 
   .lightbox-description {
     font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
 
+  /* Mobile-specific counter positioning */
+  .lightbox-counter {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    z-index: 1001;
+    white-space: nowrap;
+  }
+
+  /* Mobile Navigation - Fixed positioning to avoid collision */
   .lightbox-nav {
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    z-index: 1003;
   }
 
   .lightbox-prev {
-    left: 10px;
-    top: 10px;
+    left: 20px;
+    bottom: 10px;
+    top: auto;
     transform: none;
   }
 
   .lightbox-next {
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    bottom: 10px;
+    top: auto;
     transform: none;
   }
 
+  /* Close button stays at top right */
   .lightbox-close {
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
     font-size: 20px;
+    z-index: 1002;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* Add visual separation */
+  .lightbox-nav:hover,
+  .lightbox-close:hover {
+    background: rgba(0, 0, 0, 0.95);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+  }
+
+  /* Ensure counter doesn't interfere with touch interactions */
+  .lightbox-counter {
+    pointer-events: none;
+    user-select: none;
   }
 
   .item-overlay {
