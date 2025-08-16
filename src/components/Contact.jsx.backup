@@ -1,0 +1,451 @@
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+// THE FIX: FaExclamationCircle is replaced with FaTriangleExclamation
+import { FaCircleCheck, FaTriangleExclamation, FaUser, FaEnvelope, FaComment, FaPaperPlane, FaCheckCircle, FaTimesCircle } from 'react-icons/fa6'; 
+import './Contact.css';
+
+const Contact = () => {
+  // Enhanced state management
+  const [status, setStatus] = useState('idle');ata, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [fieldValidation, setFieldValidation] = useState({
+    name: { isValid: null, message: '' },
+    email: { isValid: null, message: '' },
+    subject: { isValid: null, message: '' },
+    message: { isValid: null, message: '' }
+  });
+  const [currentStep, setCurrentStep] = useState(1);
+  const [focusedField, setFocusedField] = useState('');
+  const [submitProgress, setSubmitProgress] = useState(0);
+
+  // Real-time validation functions
+  const validateField = (name, value) => {
+    switch (name) {
+      case 'name':
+        if (value.length < 2) {
+          return { isValid: false, message: 'Name must be at least 2 characters' };
+        }
+        if (value.length > 50) {
+          return { isValid: false, message: 'Name must be less than 50 characters' };
+        }
+        return { isValid: true, message: 'Looks good!' };
+      
+      case 'email': {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) {
+          return { isValid: false, message: 'Please enter a valid email address' };
+        }
+        return { isValid: true, message: 'Valid email format' };
+      }
+      
+      case 'subject':
+        if (value.length < 5) {
+          return { isValid: false, message: 'Subject must be at least 5 characters' };
+        }
+        if (value.length > 100) {
+          return { isValid: false, message: 'Subject must be less than 100 characters' };
+        }
+        return { isValid: true, message: 'Clear and concise!' };
+      
+      case 'message':
+        if (value.length < 10) {
+          return { isValid: false, message: 'Message must be at least 10 characters' };
+        }
+        if (value.length > 1000) {
+          return { isValid: false, message: 'Message must be less than 1000 characters' };
+        }
+        return { isValid: true, message: `${value.length}/1000 characters` };
+      
+      default:
+        return { isValid: null, message: '' };
+    }
+  };
+
+  // Handle input changes with real-time validation
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Real-time validation
+    const validation = validateField(name, value);
+    setFieldValidation(prev => ({
+      ...prev,
+      [name]: validation
+    }));
+  };
+
+  // Form submission with progress simulation
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    setSubmitProgress(0);
+    
+    // Simulate progress
+    const progressInterval = setInterval(() => {
+      setSubmitProgress(prev => {
+        if (prev >= 90) {
+          clearInterval(progressInterval);
+          return 90;
+        }
+        return prev + 10;
+      });
+    }, 200);
+    
+    const formSubmission = new FormData();
+    Object.keys(formData).forEach(key => {
+      formSubmission.append(key, formData[key]);
+    });
+    
+    formSubmission.append("access_key", "68f7100c-97d3-47bc-b8b6-20cc83152b6b"); 
+    formSubmission.append("subject", `New message from Hashtag Website: ${formData.subject}`); 
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formSubmission
+      });
+
+      const data = await response.json();
+      
+      clearInterval(progressInterval);
+      setSubmitProgress(100);
+
+      setTimeout(() => {
+        if (data.success) {
+          setStatus('success');
+          setFormData({ name: '', email: '', subject: '', message: '' });
+          setFieldValidation({
+            name: { isValid: null, message: '' },
+            email: { isValid: null, message: '' },
+            subject: { isValid: null, message: '' },
+            message: { isValid: null, message: '' }
+          });
+          setCurrentStep(1);
+        } else {
+          console.error("Error from Web3Forms:", data);
+          setStatus('error');
+        }
+        setSubmitProgress(0);
+      }, 500);
+    } catch (error) {
+      console.error("Submission Error:", error);
+      clearInterval(progressInterval);
+      setStatus('error');
+      setSubmitProgress(0);
+    }
+  };
+
+  // Check if form is valid
+  const isFormValid = () => {
+    return Object.values(fieldValidation).every(field => field.isValid === true) &&
+           Object.values(formData).every(value => value.trim() !== '');
+  };
+
+  // Progressive form steps
+  const nextStep = () => {
+    if (currentStep === 1 && fieldValidation.name.isValid && fieldValidation.email.isValid) {
+      setCurrentStep(2);
+    }
+  };
+
+  const prevStep = () => {
+    if (currentStep === 2) {
+      setCurrentStep(1);
+    }
+  };
+
+  const renderFormStep = () => {
+    if (currentStep === 1) {
+      return (
+        <motion.div
+          key="step1"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -20 }}
+          className="form-step"
+        >
+          <div className="step-header">
+            <h3 className="step-title">Tell us about yourself</h3>
+            <div className="step-indicator">
+              <span className="step-number active">1</span>
+              <span className="step-divider"></span>
+              <span className="step-number">2</span>
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="name" className="form-label">
+              <FaUser className="label-icon" />
+              Full Name
+            </label>
+            <div className={`input-wrapper ${focusedField === 'name' ? 'focused' : ''} ${fieldValidation.name.isValid !== null ? (fieldValidation.name.isValid ? 'valid' : 'invalid') : ''}`}>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                value={formData.name}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedField('name')}
+                onBlur={() => setFocusedField('')}
+                className="form-input" 
+                placeholder="e.g., Jane Doe" 
+                required 
+              />
+              <div className="validation-icon">
+                {fieldValidation.name.isValid === true && <FaCheckCircle />}
+                {fieldValidation.name.isValid === false && <FaTimesCircle />}
+              </div>
+            </div>
+            <div className={`validation-message ${fieldValidation.name.isValid !== null ? 'show' : ''} ${fieldValidation.name.isValid ? 'valid' : 'invalid'}`}>
+              {fieldValidation.name.message}
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="email" className="form-label">
+              <FaEnvelope className="label-icon" />
+              Email Address
+            </label>
+            <div className={`input-wrapper ${focusedField === 'email' ? 'focused' : ''} ${fieldValidation.email.isValid !== null ? (fieldValidation.email.isValid ? 'valid' : 'invalid') : ''}`}>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                value={formData.email}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedField('email')}
+                onBlur={() => setFocusedField('')}
+                className="form-input" 
+                placeholder="you@example.com" 
+                required 
+              />
+              <div className="validation-icon">
+                {fieldValidation.email.isValid === true && <FaCheckCircle />}
+                {fieldValidation.email.isValid === false && <FaTimesCircle />}
+              </div>
+            </div>
+            <div className={`validation-message ${fieldValidation.email.isValid !== null ? 'show' : ''} ${fieldValidation.email.isValid ? 'valid' : 'invalid'}`}>
+              {fieldValidation.email.message}
+            </div>
+          </div>
+
+          <button 
+            type="button" 
+            onClick={nextStep}
+            disabled={!fieldValidation.name.isValid || !fieldValidation.email.isValid}
+            className="step-button next-button"
+          >
+            Continue
+            <motion.div
+              animate={{ x: fieldValidation.name.isValid && fieldValidation.email.isValid ? [0, 5, 0] : 0 }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+              style={{ display: 'inline-block', marginLeft: '8px' }}
+            >
+              →
+            </motion.div>
+          </button>
+        </motion.div>
+      );
+    }
+
+    return (
+      <motion.div
+        key="step2"
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -20 }}
+        className="form-step"
+      >
+        <div className="step-header">
+          <h3 className="step-title">What can we help you with?</h3>
+          <div className="step-indicator">
+            <span className="step-number completed">1</span>
+            <span className="step-divider completed"></span>
+            <span className="step-number active">2</span>
+          </div>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="subject" className="form-label">
+            <FaComment className="label-icon" />
+            Subject
+          </label>
+          <div className={`input-wrapper ${focusedField === 'subject' ? 'focused' : ''} ${fieldValidation.subject.isValid !== null ? (fieldValidation.subject.isValid ? 'valid' : 'invalid') : ''}`}>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              value={formData.subject}
+              onChange={handleInputChange}
+              onFocus={() => setFocusedField('subject')}
+              onBlur={() => setFocusedField('')}
+              className="form-input" 
+              placeholder="e.g., Collaboration Opportunity" 
+              required 
+            />
+            <div className="validation-icon">
+              {fieldValidation.subject.isValid === true && <FaCheckCircle />}
+              {fieldValidation.subject.isValid === false && <FaTimesCircle />}
+            </div>
+          </div>
+          <div className={`validation-message ${fieldValidation.subject.isValid !== null ? 'show' : ''} ${fieldValidation.subject.isValid ? 'valid' : 'invalid'}`}>
+            {fieldValidation.subject.message}
+          </div>
+        </div>
+        
+        <div className="form-group">
+          <label htmlFor="message" className="form-label">
+            <FaComment className="label-icon" />
+            Message
+          </label>
+          <div className={`input-wrapper ${focusedField === 'message' ? 'focused' : ''} ${fieldValidation.message.isValid !== null ? (fieldValidation.message.isValid ? 'valid' : 'invalid') : ''}`}>
+            <textarea 
+              id="message" 
+              name="message" 
+              value={formData.message}
+              onChange={handleInputChange}
+              onFocus={() => setFocusedField('message')}
+              onBlur={() => setFocusedField('')}
+              className="form-textarea" 
+              rows="5" 
+              placeholder="Tell us more about your inquiry..." 
+              required
+            ></textarea>
+            <div className="validation-icon">
+              {fieldValidation.message.isValid === true && <FaCheckCircle />}
+              {fieldValidation.message.isValid === false && <FaTimesCircle />}
+            </div>
+          </div>
+          <div className={`validation-message ${fieldValidation.message.isValid !== null ? 'show' : ''} ${fieldValidation.message.isValid ? 'valid' : 'invalid'}`}>
+            {fieldValidation.message.message}
+          </div>
+        </div>
+
+        <div className="button-group">
+          <button type="button" onClick={prevStep} className="step-button prev-button">
+            ← Back
+          </button>
+          <button 
+            type="submit" 
+            disabled={!isFormValid() || status === 'sending'}
+            className="submit-button enhanced"
+          >
+            {status === 'sending' ? (
+              <div className="sending-content">
+                <div className="sending-spinner"></div>
+                <span>Sending...</span>
+                <div className="progress-bar">
+                  <div 
+                    className="progress-fill"
+                    style={{ width: `${submitProgress}%` }}
+                  ></div>
+                </div>
+              </div>
+            ) : (
+              <>
+                <FaPaperPlane className="button-icon" />
+                Send Message
+              </>
+            )}
+          </button>
+        </div>
+      </motion.div>
+    );
+  };
+
+  const renderContent = () => {
+    switch (status) {
+      case 'success':
+        return (
+          <motion.div
+            key="success"
+            className="success-message-container"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <FaCircleCheck className="success-icon" />
+            <h2 className="success-title">Message Sent!</h2>
+            <p className="success-text">Thank you for reaching out. We&apos;ll get back to you soon.</p>
+            <button onClick={() => {
+              setStatus('idle');
+              setCurrentStep(1);
+              setFormData({ name: '', email: '', subject: '', message: '' });
+              setFieldValidation({
+                name: { isValid: null, message: '' },
+                email: { isValid: null, message: '' },
+                subject: { isValid: null, message: '' },
+                message: { isValid: null, message: '' }
+              });
+            }} className="new-form-button">
+              Send Another Message
+            </button>
+          </motion.div>
+        );
+      case 'error':
+        return (
+          <motion.div
+            key="error"
+            className="success-message-container"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <FaTriangleExclamation className="error-icon" />
+            <h2 className="success-title">Something went wrong!</h2>
+            <p className="success-text">Please try again or contact us directly.</p>
+            <button onClick={() => setStatus('idle')} className="new-form-button">
+              Try Again
+            </button>
+          </motion.div>
+        );
+      default:
+        return (
+          <motion.form
+            key="form"
+            onSubmit={handleSubmit}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <AnimatePresence mode="wait">
+              {renderFormStep()}
+            </AnimatePresence>
+          </motion.form>
+        );
+    }
+  };
+
+  return (
+    <div className="new-page-container contact-page">
+      <h1 className="new-page-main-title">Get in Touch</h1>
+      <p className="page-subtitle">Have a question or a proposal? We&apos;d love to hear from you.</p>
+
+      <div className="contact-form-wrapper">
+        <AnimatePresence mode="wait">
+          {renderContent()}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
+
+  return (
+    <div className="new-page-container contact-page">
+      <h1 className="new-page-main-title">Get in Touch</h1>
+      <p className="page-subtitle">Have a question or a proposal? We’d love to hear from you.</p>
+
+      <div className="contact-form-wrapper">
+        <AnimatePresence mode="wait">
+          {renderContent()}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

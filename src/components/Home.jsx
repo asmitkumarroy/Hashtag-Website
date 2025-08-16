@@ -22,41 +22,62 @@ const Home = () => {
       <h1 className="other-Header">Our Relations with JIMS</h1>
       <p className="body-text">HASHTAG is the tech pulse of JIMS Greater Noida — not just a club, but a movement built into the core of the campus. Born in classrooms and raised in computer labs, HASHTAG was founded with the vision to turn ideas into innovation. With full support from JIMS — mentorship, resources, and the freedom to create — we’ve grown into a student-powered force of creativity and code. Every workshop, every hackathon, every project we lead is a reflection of JIMS’ trust in its students and belief in experiential learning. Together, we don’t just participate in tech — we shape it. JIMS provides the launchpad, HASHTAG brings the momentum. It’s a collaboration where passion meets purpose, and a campus becomes a community of creators. This is more than partnership — it’s a shared mission to lead the future of tech.</p>
 
-      {/* <h1 className="other-Header">Our Sponsors</h1>
+      <h1 className="other-Header">Our Sponsors</h1>
       <div className="sponsors-section">
         <div className="sponsors-grid">
-          <a href="https://microsoft.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://azure.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="https://img.logo.dev/microsoft.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="Microsoft" />
+              <img src="/Photos/Sponsors/Microsoft Azure.png" alt="Microsoft Azure" />
             </div>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://azdev.reskilll.com/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="https://img.logo.dev/github.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="GitHub" />
+              <img src="/Photos/Sponsors/AZD1.png" alt="AZD" />
             </div>
           </a>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://reskilll.com/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="https://img.logo.dev/google.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="Google" />
+              <img src="/Photos/Sponsors/Reskill.png" alt="Reskilll" />
             </div>
           </a>
-          <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="http://www.softmart.in/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="https://img.logo.dev/aws.amazon.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="AWS" />
+              <img src="/Photos/Sponsors/Softmart solutions_title sponser 1.png" alt="Softmart" />
             </div>
           </a>
-          <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://www.pw.live/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="https://img.logo.dev/vercel.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="Vercel" />
+              <img src="/Photos/Sponsors/Physics wallah.png" alt="Physics Wallah" />
             </div>
           </a>
-          <a href="https://mongodb.com" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://www.finlatics.com/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="https://img.logo.dev/mongodb.com?token=pk_X-1ZO13ESEOOOqzWJML_9Q" alt="MongoDB" />
+              <img src="/Photos/Sponsors/Finlatics.png" alt="Finlatics" />
+            </div>
+          </a>
+          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/interview buddy.png" alt="Interview Buddy" />
+            </div>
+          </a>
+
+          <a href="https://linkedoutofficial.vercel.app/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/LinkedOut_Bg_removed.png" alt="LinkedOut" />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/Genesis Logo Vertical.png" alt="Genesis" />
+            </div>
+          </a>
+          <a href="https://gen.xyz" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/xyz-logo-color.png" alt=".xyz Domain Registry" />
             </div>
           </a>
         </div>
-      </div> */}
+      </div>
 
       <div className="gallery-header">
         <Gallery />

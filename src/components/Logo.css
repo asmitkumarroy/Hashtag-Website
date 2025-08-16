@@ -7,12 +7,53 @@
   box-sizing: border-box;
 }
 
+/* Clickable logo containers */
+.hashtag-logo-link,
+.jims-logo-button {
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+}
+
+.hashtag-logo-link:hover,
+.jims-logo-button:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.hashtag-logo-link:active,
+.jims-logo-button:active {
+  transform: scale(0.98);
+}
+
+/* Remove default button styles for JIMS logo button */
+.jims-logo-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.jims-logo-button:focus,
+.hashtag-logo-link:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
 /* Logo image sizing */
 .Hashtag-Logo,
 .Jims-logo {
   height: auto;
   max-height: 55px;
   width: auto;
+  transition: all 0.3s ease;
+  display: block;
 }
 
 /* Optional: specific sizes for each logo */
@@ -24,10 +65,22 @@
   max-height: 55px;
 }
 
+/* Hover effects for the images themselves */
+.hashtag-logo-link:hover .Hashtag-Logo,
+.jims-logo-button:hover .Jims-logo {
+  filter: brightness(1.1) drop-shadow(0 2px 8px rgba(255, 255, 255, 0.3));
+}
+
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .logo {
     padding: 30px 20px;
+  }
+
+  .hashtag-logo-link,
+  .jims-logo-button {
+    padding: 6px;
+    border-radius: 6px;
   }
 
   .Hashtag-Logo {
@@ -36,5 +89,40 @@
 
   .Jims-logo {
     max-height: 45px;
+  }
+
+  .hashtag-logo-link:hover,
+  .jims-logo-button:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .hashtag-logo-link,
+  .jims-logo-button,
+  .Hashtag-Logo,
+  .Jims-logo {
+    transition: none;
+  }
+
+  .hashtag-logo-link:hover,
+  .jims-logo-button:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .hashtag-logo-link:focus,
+  .jims-logo-button:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+  }
+
+  .hashtag-logo-link:hover,
+  .jims-logo-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
   }
 }
