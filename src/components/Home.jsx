@@ -57,6 +57,16 @@ const Home = () => {
           </a>
           <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/clickadiet.png" alt="Click a Diet" />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/Genesis Logo Vertical.png" alt="Genesis" />
+            </div>
+          </a>
+          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
               <img src="/Photos/Sponsors/interview buddy.png" alt="Interview Buddy" />
             </div>
           </a>
@@ -66,11 +76,43 @@ const Home = () => {
               <img src="/Photos/Sponsors/LinkedOut_Bg_removed.png" alt="LinkedOut" />
             </div>
           </a>
-          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+
+          <a href="https://linkedoutofficial.vercel.app/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
-              <img src="/Photos/Sponsors/Genesis Logo Vertical.png" alt="Genesis" />
+              <img src="/Photos/Sponsors/julep.png" alt="Julep AI" />
             </div>
           </a>
+
+
+          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/Events Info.png" alt="Events Info" />
+            </div>
+          </a>
+          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/Givemycert.png" alt="Give My Certificates" />
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/adv point line.png" alt="Advertising Point Line" />
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/meraj's creatives.png" alt="Meraj's Creatives" />
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+            <div className="sponsor-logo">
+              <img src="/Photos/Sponsors/NAVRAS LOGO (Original).png" alt="Navras Jemtec" />
+            </div>
+          </a>
+
           <a href="https://gen.xyz" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/xyz-logo-color.png" alt=".xyz Domain Registry" />
