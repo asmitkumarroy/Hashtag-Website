@@ -55,11 +55,9 @@ const Home = () => {
               <img src="/Photos/Sponsors/Finlatics.png" alt="Finlatics" />
             </div>
           </a>
-          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/clickadiet.png" alt="Click a Diet" />
             </div>
-          </a>
           <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/Genesis Logo Vertical.png" alt="Genesis" />
@@ -77,37 +75,37 @@ const Home = () => {
             </div>
           </a>
 
-          <a href="https://linkedoutofficial.vercel.app/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://julep.ai/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/julep.png" alt="Julep AI" />
             </div>
           </a>
 
 
-          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://www.linkedin.com/company/eventsinfo/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/Events Info.png" alt="Events Info" />
             </div>
           </a>
-          <a href="https://interviewbuddy.net/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://givemycertificate.com/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/Givemycert.png" alt="Give My Certificates" />
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://www.linkedin.com/company/advertising-pointline/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/adv point line.png" alt="Advertising Point Line" />
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://www.linkedin.com/company/meraj-s-creatives/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/meraj's creatives.png" alt="Meraj's Creatives" />
             </div>
           </a>
 
-          <a href="https://www.linkedin.com/company/zk-genesis" target="_blank" rel="noopener noreferrer" className="sponsor-link">
+          <a href="https://www.linkedin.com/company/navras_jemtec/" target="_blank" rel="noopener noreferrer" className="sponsor-link">
             <div className="sponsor-logo">
               <img src="/Photos/Sponsors/NAVRAS LOGO (Original).png" alt="Navras Jemtec" />
             </div>
