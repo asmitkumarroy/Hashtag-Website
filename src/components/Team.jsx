@@ -64,11 +64,11 @@ const teamData = {
       { name: 'Prince Kumar', title: 'Member', avatarUrl: '/Photos/Prince.png',social: { github: 'https://github.com/Princekr267', linkedin: 'https://www.linkedin.com/in/prince-kumar-27a12b315',instagram: "https://www.instagram.com/princekrr267"} },
       { name: 'Dilawar Ali', title: 'Member', avatarUrl: '/Photos/Dilawar.png',social: { github: 'https://github.com/Dilawar-ali313', linkedin: 'https://www.linkedin.com/in/dilawar-ali-4533ab335',instagram: "https://www.instagram.com/dilawarzaidi._?igsh=N3ZkdXhhNDZjNHpl"} },
       { name: 'Suhani Mittal', title: 'Member', avatarUrl: '/Photos/Suhani.png',social: { github: 'https://github.com/suhani-ux123', linkedin: 'https://www.linkedin.com/in/suhani-mittal-a650a2381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/suuhanii__m?igsh=MWljZWE0djNoaXJ5aw=="} },
-      { name: 'Kushagra Pandey', title: 'Member', avatarUrl: '/Photos/Kushagra.png',social: { github: '', linkedin: '',instagram: ""} },
-      { name: 'Tanvi Salhotra', title: 'Member', avatarUrl: '/Photos/tanvi_salhotra.png',social: { github: '', linkedin: '',instagram: ""} },
-      { name: 'Anushka Dua', title: 'Member', avatarUrl: '/Photos/Anushka_Dua.png',social: { github: '', linkedin: '',instagram: ""} },
-      { name: 'Rimjhim Shukla', title: 'Member', avatarUrl: '/Photos/Rimjhim.png',social: { github: '', linkedin: '',instagram: ""} },
-      { name: 'Bhumika Dobha', title: 'Member', avatarUrl: '/Photos/Bhumika_Dobhal.png',social: { github: '', linkedin: '',instagram: ""} },
+      { name: 'Kushagra Pandey', title: 'Member', avatarUrl: '/Photos/Kushagra.png',social: { github: 'https://github.com/kushagra0333', linkedin: 'https://www.linkedin.com/in/its-kushagra-pandey',instagram: "https://www.instagram.com/its_kushagra_pandey"} },
+      { name: 'Tanvi Salhotra', title: 'Member', avatarUrl: '/Photos/tanvi_salhotra.png',social: { github: '', linkedin: '',instagram: "https://www.instagram.com/nikoniko_7t"} },
+      { name: 'Anushka Dua', title: 'Member', avatarUrl: '/Photos/Anushka_Dua.png',social: { github: '', linkedin: 'https://www.linkedin.com/in/anushka-dua-06427131a?utm_source=share_via&utm_content=profile&utm_medium=member_ios',instagram: "https://www.instagram.com/anushkaa_dua?igsh=NHllZGZzM2RzNTAx&utm_source=qr"} },
+      { name: 'Rimjhim Shukla', title: 'Member', avatarUrl: '/Photos/Rimjhim.png',social: { github: 'https://github.com/shuklarimjhim87-a11y', linkedin: 'https://www.linkedin.com/in/rimjhim-shukla-a264203a8?utm_source=share_via&utm_content=profile&utm_medium=member_android',instagram: "https://www.instagram.com/_rimjhimshuklaa_"} },
+      { name: 'Bhumika Dobha', title: 'Member', avatarUrl: '/Photos/Bhumika_Dobhal.png',social: { github: 'https://github.com/dobhalbhumikaaa', linkedin: 'https://www.linkedin.com/in/bhumika-dobhal-06118b381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/bhumika_dobhal?igsh=MXBkb3g3NmNtdzBhbg=="} },
       // { name: '', title: 'Member', avatarUrl: '/Photos/.png',social: { github: '', linkedin: '',instagram: ""} },
     ]
   }
