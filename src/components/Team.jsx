@@ -10,72 +10,73 @@ import './Team.css';
 // Do not change any other data only change this data structure to match the official names and roles you provided.
 const teamData = {
   leaders: [
-    { name: 'Asmit Kumar Roy', title: 'President', avatarUrl: '/Photos/Asmit.png', social: { github: 'https://github.com/asmitkumarroy', linkedin: 'https://www.linkedin.com/in/asmit-kumar-roy',instagram: "https://www.instagram.com/_asmit_2304"} },
-    { name: 'Neelesh Kumar', title: 'Vice-President', avatarUrl: '/Photos/Neelesh.png',social: { github: 'https://github.com/neeleshkr22', linkedin: 'https://www.linkedin.com/in/neelesh-kumar-rana/',instagram: "https://www.instagram.com/i.neeleshk" } },
-    { name: 'Akshat Tyagi', title: 'Secretary', avatarUrl: '/Photos/Akshat_Tyagi.png', social: { github: 'https://github.com/DastroG/', linkedin: 'https://www.linkedin.com/in/xyz/',instagram: "https://www.instagram.com/akshattyagi_17/" } },
-    { name: 'Kangna Shrivastava', title: 'Treasurer', avatarUrl: '/Photos/Kangna.png', social: { github: 'https://github.com/KangnaShrivastva', linkedin: 'http://www.linkedin.com/in/kangna-shrivastva-9b542523a',instagram: "https://www.instagram.com/kangnaa._?igsh=MWVuNmcwMzFtMzc0aw==" } },
-    { name: 'Rishabh Verma', title: 'Deputy Head',avatarUrl: '/Photos/Rishabh.png', social: { github: 'https://github.com/RishabhV28', linkedin: 'https://www.linkedin.com/in/rishabh-verma-9a4997262/',instagram: "https://www.instagram.com/wh0.zip__" } },
+    { name: 'Anwesha Sen', title: 'President', avatarUrl: '/Photos/Anwesha.png',social: { github: 'https://github.com/anwesha1367', linkedin: 'https://www.linkedin.com/in/anwesha-sen-97170227b',instagram: "https://www.instagram.com/anwesha_sen9405?igsh=MW9jbTlpd2xxbWJiNw==" } },
+    { name: 'M. Abdullah Meraj', title: 'Vice President', avatarUrl: '/Photos/Abdullah.png',social: { github: 'https://github.com/mohdabdullahmeraj', linkedin: 'https://www.linkedin.com/in/mohdabdullahmeraj/',instagram: "https://www.instagram.com/mohdabdullahmeraj/" } },
+    { name: 'Priyal Jain', title: 'Secretary ', avatarUrl: '/Photos/Priyal.png',social: { github: 'https://github.com/pihu404', linkedin: 'https://www.linkedin.com/in/priyal-jain-92863b282',instagram: "https://www.instagram.com/priyal2936?igsh=MW92ZDIzNW5wcnZjNA==" } },
+    { name: 'Vanshika S.', title: 'Treasurer', avatarUrl: '/Photos/Vanshika.png',social: { github: 'https://github.com/Vanshika-Srivastava79', linkedin: 'https://www.linkedin.com/in/vanshikasrivastava79',instagram: "https://www.instagram.com/vannssszzz/" } },
   ],
   technical: {
     leads: [
-      { name: 'Alok Kumar Jha', title: 'Head', avatarUrl: '/Photos/Alok.png', social: { github: 'https://github.com/alokjha099', linkedin: 'https://www.linkedin.com/in/alok-kumar-jha-3521a1265',instagram: "https://www.instagram.com/alokjha245" } },
-      { name: 'Harsh Naagar', title: 'Co-Head', avatarUrl: '/Photos/Harsh.png', social: { github: 'https://github.com/HarshNaagar77', linkedin: 'https://www.linkedin.com/in/harsh-naagar-a4b5b8207',instagram: "https://www.instagram.com/hnaagar04" } }
+      { name: 'Ayush Kumar S.', title: 'Head', avatarUrl: '/Photos/Ayush_Kumar.png', social: { github: 'https://github.com/ayushkumarsingh14', linkedin: 'https://www.linkedin.com/in/ayush-kumar-singh-7ba5862ba',instagram: "https://www.instagram.com/ayush.feb14/" } },
+      { name: 'Ankit Choudhary', title: 'Co-Head', avatarUrl: '/Photos/Ankit.png', social: { github: 'https://github.com/ankit77003', linkedin: 'https://www.linkedin.com/in/ankit-choudhary-978a11266/',instagram: "https://www.instagram.com/ankitchoudhary4141/" } },
     ],
-    members: [
-      { name: 'Ayush Kumar S.', title: 'Member', avatarUrl: '/Photos/Ayush_Kumar.png', social: { github: 'https://github.com/ayushkumarsingh14', linkedin: 'https://www.linkedin.com/in/ayush-kumar-singh-7ba5862ba',instagram: "https://www.instagram.com/ayush.feb14/" } },
-      { name: 'Ankit Choudhary', title: 'Member', avatarUrl: '/Photos/Ankit.png', social: { github: 'https://github.com/ankit77003', linkedin: 'https://www.linkedin.com/in/ankit-choudhary-978a11266/',instagram: "https://www.instagram.com/ankitchoudhary4141/" } },
-      { name: 'Aman Verma', title: 'Member', avatarUrl: '/Photos/Aman.png',social: { github: 'https://github.com/Batman0003333', linkedin: 'https://www.linkedin.com/in/aman-v-64223a293',instagram: "https://www.instagram.com/er.a_m_n_?igsh=MTczdXUwbzNheWdweA==" } },
-      //{ name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.png', social: { github: '#', linkedin: '#',instagram: "#" } },
-    ]
+    // members: []                commented bcz can use in future
   },
   graphics: {
     leads: [
-        { name: 'M. Abdullah Meraj', title: 'Head', avatarUrl: '/Photos/Abdullah.png',social: { github: 'https://github.com/mohdabdullahmeraj', linkedin: 'https://www.linkedin.com/in/mohdabdullahmeraj/',instagram: "https://www.instagram.com/mohdabdullahmeraj/" } },
-        { name: 'Priyal Jain', title: 'Co-Head', avatarUrl: '/Photos/Priyal.png',social: { github: 'https://github.com/pihu404', linkedin: 'https://www.linkedin.com/in/priyal-jain-92863b282',instagram: "https://www.instagram.com/priyal2936?igsh=MW92ZDIzNW5wcnZjNA==" } }
+      { name: 'Avishka Bhardwaj', title: 'Head', avatarUrl: '/Photos/Avishka.png',social: { github: 'https://github.com/avishkabhardwaj', linkedin: 'https://www.linkedin.com/in/avishka-bhardwaj-091807327',instagram: "https://www.instagram.com/avishka.20?utm_source=qr&igsh=MTNzZ2I3cDdsYWV2NQ==" } },
+      { name: 'Anantabh Kashyap', title: 'Co-Head', avatarUrl: '/Photos/Arin.png',social: { github: 'https://github.com/arxnkshyp/', linkedin: 'https://www.linkedin.com/in/arin-kashyap/',instagram: "https://www.instagram.com/arxnkshyp/" } },
     ],
-    members: [
-        { name: 'Avishka Bhardwaj', title: 'Member', avatarUrl: '/Photos/Avishka.png',social: { github: 'https://github.com/avishkabhardwaj', linkedin: 'https://www.linkedin.com/in/avishka-bhardwaj-091807327',instagram: "https://www.instagram.com/avishka.20?utm_source=qr&igsh=MTNzZ2I3cDdsYWV2NQ==" } },
-        { name: 'Niharika Kumari', title: 'Member', avatarUrl: '/Photos/Niharika.png', social: { github: 'https://github.com/niharikakumari23', linkedin: 'https://www.linkedin.com/in/niharika-k-71b35730a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/niha.stappen_" } },
-        //{ name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.png',social: { github: '#', linkedin: '#',instagram: "#" } },
-        { name: 'Anantabh Kashyap', title: 'Member', avatarUrl: '/Photos/Arin.png',social: { github: 'https://github.com/arxnkshyp/', linkedin: 'https://www.linkedin.com/in/arin-kashyap/',instagram: "https://www.instagram.com/arxnkshyp/" } }
-    ]
+    // members: []
   },
   management: {
     leads: [
-        { name: 'Anwesha Sen', title: 'Head', avatarUrl: '/Photos/Anwesha.png',social: { github: 'https://github.com/anwesha1367', linkedin: 'https://www.linkedin.com/in/anwesha-sen-97170227b',instagram: "https://www.instagram.com/anwesha_sen9405?igsh=MW9jbTlpd2xxbWJiNw==" } },
-        { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain.png',social: { github: 'https://github.com/Akshatjain2411', linkedin: 'https://www.linkedin.com/in/Akshatjain',instagram: "https://www.instagram.com/akshatjain2411" } }
+      { name: 'Atulya Mukesh', title: 'Head', avatarUrl: '/Photos/Atulya.png',social: { github: 'https://github.com/atulya-mukesh', linkedin: 'https://www.linkedin.com/in/atulya-mukesh-12716a2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/atulya.mukesh/profilecard/?igsh=MThyenFxOTEydWZ5Zw==" } },
+      { name: 'Akshat Jain', title: 'Co-Head', avatarUrl: '/Photos/Akshat_Jain.png',social: { github: 'https://github.com/Akshatjain2411', linkedin: 'https://www.linkedin.com/in/Akshatjain',instagram: "https://www.instagram.com/akshatjain2411" } }
     ],
-    members: [
-        { name: 'Atulya Mukesh', title: 'Member', avatarUrl: '/Photos/Atulya.png',social: { github: 'https://github.com/atulya-mukesh', linkedin: 'https://www.linkedin.com/in/atulya-mukesh-12716a2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/atulya.mukesh/profilecard/?igsh=MThyenFxOTEydWZ5Zw==" } },
-        { name: 'Ankur Pandey', title: 'Member', avatarUrl: '/Photos/Ankur.png',social: { github: 'https://github.com/Ank77r', linkedin: 'http://www.linkedin.com/in/777-ankur-pandey',instagram: "https://www.instagram.com/vm_studios_official/" } },
-        //{ name: 'Atula (3)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } },
-        //{ name: 'Atula (4)', title: 'Member', avatarUrl: '/Photos/Atulya.jpg',social: { github: '#', linkedin: '#',instagram: "#" } }
-    ]
+    // members: []
   },
   content: {
     leads: [
-        { name: 'Sanskriti Bishnoi', title: 'Head', avatarUrl: '/Photos/Sanskriti.png',social: { github: 'https://github.com/Sanskriti-Vishnoi', linkedin: 'https://www.linkedin.com/in/sanskriti-vishnoi-00866926a',instagram: "https://www.instagram.com/sanskriti_bishnoi/" } },
-        { name: 'Rishabh Verma', title: 'Co-Head', avatarUrl: '/Photos/Rishabh.png',social: { github: 'https://github.com/RishabhV28', linkedin: 'https://www.linkedin.com/in/rishabh-verma-9a4997262/',instagram: "https://www.instagram.com/wh0.zip__" } }
+      { name: 'Shreya Sai', title: 'Head', avatarUrl: '/Photos/Shreya.png',social: { github: 'https://github.com/sst2105', linkedin: 'https://www.linkedin.com/in/shreya-sai-thanikella/',instagram: "https://www.instagram.com/l_.shreya._l" } },
+      { name: 'Rimi Kumari', title: 'Co-Head', avatarUrl: '/Photos/Rimi.png',social: { github: 'https://github.com/', linkedin: 'https://www.linkedin.com/in/',instagram: "https://www.instagram.com/" } },
     ],
-    members: [
-        { name: 'Vanshika S.', title: 'Member', avatarUrl: '/Photos/Vanshika.png',social: { github: 'https://github.com/Vanshika-Srivastava79', linkedin: 'https://www.linkedin.com/in/vanshikasrivastava79',instagram: "https://www.instagram.com/vannssszzz/" } },
-        { name: 'Shreya Sai', title: 'Member', avatarUrl: '/Photos/Shreya.png',social: { github: 'https://github.com/sst2105', linkedin: 'https://www.linkedin.com/in/shreya-sai-thanikella/',instagram: "https://www.instagram.com/l_.shreya._l" } },
-        
-    ]
+    // members: []
   },
   social: {
     leads: [
     { name: 'Pratyush Patwal', title: 'Head', avatarUrl: '/Photos/Pratyush.png',social: { github: 'https://github.com/pratyush1279', linkedin: 'https://www.linkedin.com/in/pratyush-patwal-198144333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/ohhpratyush?igsh=MWl3bDJjNnowdjQ4ZQ==" } },
   
-    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/Ayush_Parashar.png', social: { github: 'https://github.com/ayushparashar91', linkedin: 'https://www.linkedin.com/in/ayush-parashar-49a596213',instagram: "https://www.instagram.com/ayushparashar19" } } 
-],
-    members: []
+    { name: 'Ayush Parashar', title: 'Co-Head', avatarUrl: '/Photos/Ayush_Parashar.png', social: { github: 'https://github.com/ayushparashar91', linkedin: 'https://www.linkedin.com/in/ayush-parashar-49a596213',instagram: "https://www.instagram.com/ayushparashar19" } },
+  ],
+    // members: []
   },
+  pr: {
+    leads: [
+      { name: 'Avishka Bhardwaj', title: 'Head', avatarUrl: '/Photos/Avishka.png',social: { github: 'https://github.com/avishkabhardwaj', linkedin: 'https://www.linkedin.com/in/avishka-bhardwaj-091807327',instagram: "https://www.instagram.com/avishka.20?utm_source=qr&igsh=MTNzZ2I3cDdsYWV2NQ==" } },
+    ],
+    // members: []
+  },
+  members: {
+    leads: [
+      { name: 'Amisha', title: 'Member', avatarUrl: '/Photos/Amisha.png',social: { github: 'https://github.com/Amisha1kumari', linkedin: 'https://www.linkedin.com/in/amisha-kumari-04bb10328',instagram: "https://www.instagram.com/amixh.aa?igsh=MTFjaHMwemZ2dmw3eA==" } },
+      { name: 'Kartik Mishra', title: 'Member', avatarUrl: '/Photos/Kartik.png',social: { github: 'https://github.com/codelawyer-max', linkedin: 'https://www.linkedin.com/in/kartik-mishra-6139b9335',instagram: "https://www.instagram.com/kartikkmishraaa"} },
+      { name: 'Prince Kumar', title: 'Member', avatarUrl: '/Photos/Prince.png',social: { github: 'https://github.com/Princekr267', linkedin: 'https://www.linkedin.com/in/prince-kumar-27a12b315',instagram: "https://www.instagram.com/princekrr267"} },
+      { name: 'Dilawar Ali', title: 'Member', avatarUrl: '/Photos/Dilawar.png',social: { github: 'https://github.com/Dilawar-ali313', linkedin: 'https://www.linkedin.com/in/dilawar-ali-4533ab335',instagram: "https://www.instagram.com/dilawarzaidi._?igsh=N3ZkdXhhNDZjNHpl"} },
+      { name: 'Suhani Mittal', title: 'Member', avatarUrl: '/Photos/Suhani.png',social: { github: 'https://github.com/suhani-ux123', linkedin: 'https://www.linkedin.com/in/suhani-mittal-a650a2381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/suuhanii__m?igsh=MWljZWE0djNoaXJ5aw=="} },
+      { name: 'Kushagra Pandey', title: 'Member', avatarUrl: '/Photos/Kushagra.png',social: { github: 'https://github.com/kushagra0333', linkedin: 'https://www.linkedin.com/in/its-kushagra-pandey',instagram: "https://www.instagram.com/its_kushagra_pandey"} },
+      { name: 'Tanvi Salhotra', title: 'Member', avatarUrl: '/Photos/tanvi_salhotra.png',social: { github: 'https://github.com/tan07vi', linkedin: 'http://www.linkedin.com/in/tanvi7709',instagram: "https://www.instagram.com/nikoniko_7t"} },
+      { name: 'Anushka Dua', title: 'Member', avatarUrl: '/Photos/Anushka_Dua.png',social: { github: 'https://github.com/anushkadua23', linkedin: 'https://www.linkedin.com/in/anushka-dua-06427131a?utm_source=share_via&utm_content=profile&utm_medium=member_ios',instagram: "https://www.instagram.com/anushkaa_dua?igsh=NHllZGZzM2RzNTAx&utm_source=qr"} },
+      { name: 'Rimjhim Shukla', title: 'Member', avatarUrl: '/Photos/Rimjhim.png',social: { github: 'https://github.com/shuklarimjhim87-a11y', linkedin: 'https://www.linkedin.com/in/rimjhim-shukla-a264203a8?utm_source=share_via&utm_content=profile&utm_medium=member_android',instagram: "https://www.instagram.com/_rimjhimshuklaa_"} },
+      { name: 'Bhumika Dobha', title: 'Member', avatarUrl: '/Photos/Bhumika_Dobhal.png',social: { github: 'https://github.com/dobhalbhumikaaa', linkedin: 'https://www.linkedin.com/in/bhumika-dobhal-06118b381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram: "https://www.instagram.com/bhumika_dobhal?igsh=MXBkb3g3NmNtdzBhbg=="} },
+      // { name: '', title: 'Member', avatarUrl: '/Photos/.png',social: { github: '', linkedin: '',instagram: ""} },
+    ]
+  }
 };
 
-const topRowLeaders = teamData.leaders.slice(0, 3);
-const bottomRowLeaders = teamData.leaders.slice(3, 5);
-const TABS = ['Technical', 'Graphics', 'Management', 'Content', 'Social'];
+const topRowLeaders = teamData.leaders.slice(0, 2); // First 2 cards
+const bottomRowLeaders = teamData.leaders.slice(2, 4); // Last 2 cards
+const TABS = ['Technical', 'Graphics', 'Management', 'Content', 'Social', 'PR', 'Members'];
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState('technical');
@@ -115,15 +116,28 @@ const Team = () => {
       </div>
 
       <section className="new-team-section">
-        <h2 className="new-team-category-title">Department Leads</h2>
-        <div className="new-team-grid department-leads-grid">
-          {activeDepartment.leads.map((member) => ( <ProfileCard key={member.name} {...addDefaultAvatar(member)} /> ))}
-        </div>
+  
+        {activeDepartment.leads && activeDepartment.leads.length > 0 && (
+          <>
+            <h2 className="new-team-category-title">
+              {activeTab === 'members' ? 'Members' : 'Department Leads'}
+            </h2>
+            <div className={`new-team-grid ${activeTab === 'members' ? 'department-members-grid' : 'department-leads-grid'}`}>
+              {activeDepartment.leads.map((member, index) => ( 
+                <ProfileCard key={`${activeTab}-${index}`} {...addDefaultAvatar(member)} /> 
+              ))}
+            </div>
+          </>
+        )}
         
-        <h2 className="new-team-category-title members-title">Members</h2>
-        <div className="new-team-grid department-members-grid">
-          {activeDepartment.members.map((member) => ( <ProfileCard key={member.name} {...addDefaultAvatar(member)} /> ))}
-        </div>
+        {/* {activeDepartment.members && activeDepartment.members.length > 0 && (
+          <>
+            <h2 className="new-team-category-title members-title">Members</h2>
+            <div className="new-team-grid department-members-grid">
+              {activeDepartment.members.map((member) => ( <ProfileCard key={member.name} {...addDefaultAvatar(member)} /> ))}
+            </div>
+          </>
+        )} */}
       </section>
     </div>
   );

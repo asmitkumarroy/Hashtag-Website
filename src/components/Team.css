@@ -39,9 +39,28 @@
 }
 
 /* Overall Leaders Layout */
-.leaders-layout-container { display: flex; flex-direction: column; align-items: center; gap: 3rem; }
-.leaders-top-row { grid-template-columns: repeat(3, 1fr); width: 100%; }
-.leaders-bottom-row { grid-template-columns: repeat(2, 1fr); width: 70%; }
+.leaders-layout-container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 3rem; /* Increased gap between rows */
+}
+
+.leaders-top-row { 
+  grid-template-columns: repeat(2, 1fr); 
+  width: 100%; 
+  max-width: 900px; /* Wider container */
+  gap: 3.5rem; /* Larger gap between cards */
+  padding: 0 2rem;
+}
+
+.leaders-bottom-row { 
+  grid-template-columns: repeat(2, 1fr); 
+  width: 100%; 
+  max-width: 900px;
+  gap: 3.5rem;
+  padding: 0 2rem;
+}
 
 /* CHANGE #4: Standardized layouts for all departments */
 .department-leads-grid {
@@ -69,6 +88,7 @@
     max-width: 380px; /* Limit width on mobile for better appearance */
     margin-left: auto;
     margin-right: auto;
+    gap: 1.5rem;
   }
 }
 
@@ -93,3 +113,15 @@
 .new-tab-button { background: none; border: none; border-bottom: 3px solid transparent; transform: translateY(1px); color: #adb5bd; font-size: 1.1rem; font-weight: 600; padding: 1rem 1.5rem; cursor: pointer; transition: all 0.3s ease; }
 .new-tab-button:hover { color: #fff; }
 .new-tab-button.active { color: #fff; border-bottom-color: #fff; }
+
+/* Responsive adjustments for leadership */
+@media (max-width: 1200px) {
+  .leaders-top-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .department-members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
